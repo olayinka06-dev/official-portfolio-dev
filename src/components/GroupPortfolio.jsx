@@ -57,7 +57,7 @@ function GroupPortfolio() {
             
             {images.filter(image => selectedFilter === 'All' || image.category === selectedFilter)
               .map((image, index) => (
-                <div style={{display: "flex", flexDirection: "row"}} className="portfolio-item" key={index}>
+                <div className="portfolio-item" key={index}>
                   <div className="portfolio-wrap">
                     <img src={image.src} alt={image.alt} />
                   </div>
@@ -83,11 +83,13 @@ const Wrapper = styled.section`
   margin-bottom: 30px;
 }
 .portfolio-item {
-  width: calc(100% / 3); /* Set the width to 33.33% of the container */
+  width: calc(100% / 3);
   padding: 10px;
   box-sizing: border-box;
-  display: inline-block; /* Display the items inline */
-  vertical-align: top; /* Align the items to the top */
+  display: inline-block; 
+  vertical-align: top; 
+  transition: all 3s ease;
+
 }
 
 .portfolio #portfolio-flters {
@@ -109,31 +111,30 @@ const Wrapper = styled.section`
   line-height: 1;
   text-transform: uppercase;
   color: #272829;
+  /* color: var(--herocolor); */
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.active {
-  color: #0563bb;
+  color: hsl(136, 65%, 51%);
 }
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
-/* .portfolio-item{
-  display: flex !important;
-  flex-direction: row !important;
-} */
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  transition: all 3s ease;
+
 }
 .portfolio-wrap img{
   width: 100%;
+  transition: all 3s ease;
 }
 .portfolio .portfolio-wrap::before {
   content: "";
