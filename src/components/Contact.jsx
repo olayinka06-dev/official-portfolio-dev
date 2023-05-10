@@ -227,7 +227,7 @@ input, textarea{
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0563bb;
+  background: var(--activehover);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -235,9 +235,9 @@ input, textarea{
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+/* .contact .php-email-form button[type=submit]:hover {
   background: #0678e3;
-}
+} */
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -258,6 +258,10 @@ input, textarea{
     transform: rotate(360deg);
   }
 }
-
+@media screen and (max-width: 950px) {
+  .row{
+    flex-direction: column;
+  }
+}
 `
 export default Contact;
