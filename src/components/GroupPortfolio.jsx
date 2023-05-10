@@ -66,19 +66,6 @@ function GroupPortfolio() {
                 
               ))}
           </div>
-          {/* <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""/>
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
     </section>
     </Wrapper>
@@ -94,6 +81,13 @@ const Wrapper = styled.section`
 } 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+}
+.portfolio-item {
+  width: calc(100% / 3); /* Set the width to 33.33% of the container */
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block; /* Display the items inline */
+  vertical-align: top; /* Align the items to the top */
 }
 
 .portfolio #portfolio-flters {
@@ -127,10 +121,10 @@ const Wrapper = styled.section`
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
-.portfolio-item{
+/* .portfolio-item{
   display: flex !important;
   flex-direction: row !important;
-}
+} */
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;

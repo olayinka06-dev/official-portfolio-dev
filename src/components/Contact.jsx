@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Contact = () => {
   return (
     <Wrapper>
-          <section id="contact" className="contact">
+      <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
 
         <div className="section-title">
@@ -41,22 +41,22 @@ const Contact = () => {
 
           <div class="second">
 
-            <form action="" method="post" role="form" className="php-email-form">
+            <form action="" className="php-email-form">
               <div className="row-two">
-                <div className="col-md-6 form-group">
+                <div className="form-group">
                   <input type="text" className="form-control" placeholder="Your Name" required/>
                 </div>
-                <div className="col-md-6 form-group mt-3 mt-md-0">
+                <div className="form-group">
                   <input type="email" className="form-control" placeholder="Your Email" required />
                 </div>
               </div>
-              <div classname="form-group mt-3">
+              <div classname="form-group">
                 <input type="text" className="form-control" placeholder="Subject" required/>
               </div>
-              <div classname="form-group mt-3">
+              <div classname="form-group">
                 <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div classname="my-3">
+              <div classname="">
                 <div className="loading">Loading</div>
                 <div className="error-message"></div>
                 <div className="sent-message">Your message has been sent. Thank you!</div>
