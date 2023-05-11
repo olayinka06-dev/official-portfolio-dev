@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import {Link} from 'react-scroll';
 import styled from 'styled-components';
-import profileimg from './images/profile-img.jpg';
+import profileimg from '../images/profile-img.jpg';
 import {HiOutlineHome} from "react-icons/hi";
 import {RxPerson} from "react-icons/rx";
 import {AiOutlineFile, AiOutlineMail} from "react-icons/ai";
 import {BiBookContent} from "react-icons/bi";
 import {CgDatabase} from "react-icons/cg";
-import '../index.css';
+import '../../index.css';
 
 
 
-const Navigation2 = ({backgroundSwitcher, handleToggleSwitcher}) => {
+
+const NavigationBar = ({backgroundSwitcher, handleToggleSwitcher}) => {
   const [activeLink, setActiveLink] = useState('hero');
   const [menu, setMenu] = useState(false);
 
@@ -22,11 +23,18 @@ const Navigation2 = ({backgroundSwitcher, handleToggleSwitcher}) => {
   const handleSetActive = (to) => {
     setActiveLink(to);
   }
+  // const handleChange = (event) => {
+  //   setIsChecked(event.target.checked);
+  // };
 
 
   return (
     <Wrapper>
       <aside  className={`${menu ? 'mobile-toggler' : ''}`}>
+        {/* <Toggle>
+          <input type="checkbox" checked={checked} onChange={onChange} />
+          <span className='indicate'></span>
+        </Toggle> */}
         <div class="profile box-4">
           <img src={profileimg} alt={profileimg} />
           <h1 class="text-light">Olayinka_Dev</h1>
@@ -63,7 +71,49 @@ const Navigation2 = ({backgroundSwitcher, handleToggleSwitcher}) => {
     </Wrapper>
   );
 }
-
+// const Toggle = styled.label`
+//   position: relative;
+//   display: inline-block;
+//   width: 60px;
+//   height: 28px;
+//   input {
+//     opacity: 0;
+//     width: 0;
+//     height: 0;
+//   }
+//   .indicate {
+//     position: absolute;
+//     cursor: pointer;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: var(--toggle-color);
+//     -webkit-transition: .4s;
+//     transition: .4s;
+//     border-radius: 34px;
+//   }
+//   span:before {
+//     position: absolute;
+//     content: "";
+//     height: 22px;
+//     width: 26px;
+//     left: 4px;
+//     bottom: 3px;
+//     background-color: white;
+//     -webkit-transition: .4s;
+//     transition: .4s;
+//     border-radius: 50%;
+//   }
+//   input:checked + span {
+//     background-color: var(--toggle-color);
+//   }
+//   input:checked + span:before {
+//     -webkit-transform: translateX(26px);
+//     -ms-transform: translateX(26px);
+//     transform: translateX(26px);
+//   }
+// `;
 const Wrapper = styled.aside`
 
   aside{
@@ -257,4 +307,4 @@ const Wrapper = styled.aside`
 `
 
 
-export default Navigation2;
+export default NavigationBar;

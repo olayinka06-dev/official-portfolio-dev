@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import profileimg2 from './images/profile2-img.jpg';
+import profileimg2 from '../images/profile2-img.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 

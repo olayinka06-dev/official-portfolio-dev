@@ -2,8 +2,14 @@ import React from 'react'
 import { BiEnvelope } from 'react-icons/bi';
 import { MdCall, MdLocationPin } from 'react-icons/md';
 import styled from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <Wrapper>
       <section id="contact" className="contact">
@@ -15,7 +21,7 @@ const Contact = () => {
 
         <div class="row">
 
-          <div class="first">
+          <div class="first" data-aos="fade-right">
             <div class="info">
               <div class="address">
                 <i className='icon'><MdLocationPin/></i>
@@ -39,7 +45,7 @@ const Contact = () => {
 
           </div>
 
-          <div class="second">
+          <div class="second" data-aos="fade-left">
 
             <form action="" className="php-email-form">
               <div className="row-two">
@@ -61,7 +67,7 @@ const Contact = () => {
                 <div className="error-message"></div>
                 <div className="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div className="text-center"><button type="submit">Send Message</button></div>
+              <div className="btn-group"><button type="submit">Send Message</button></div>
             </form>
 
           </div>
@@ -267,7 +273,16 @@ input, textarea{
   .contact{
     padding: 30px 10px;
   }
+  .btn-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
   .row{
+    flex-direction: column;
+  }
+  .row-two{
     flex-direction: column;
   }
 }

@@ -4,9 +4,10 @@ import {AiOutlineTwitter} from 'react-icons/ai';
 import {RiFacebookFill} from 'react-icons/ri';
 import {IoLogoInstagram} from 'react-icons/io';
 import {FaLinkedinIn} from "react-icons/fa";
-import bgImg from './images/hero-bg.jpg';
+import bgImg from '../images/hero-bg.jpg';
 import { Link } from 'react-router-dom';
-import '../index.css';
+import '../../index.css';
+
 
 
 const Hero = () => {
