@@ -20,19 +20,19 @@ const Contact = () => {
               <div class="address">
                 <i className='icon'><MdLocationPin/></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>No 11 Allahulateef Street, Isalekoko, Ilorin Kwara State</p>
               </div>
 
               <div className="email">
                 <i className='icon'><BiEnvelope/></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>olayinkaconsult06@gmail.com</p>
               </div>
 
               <div className="phone">
-                <i className='icon'><MdCall/></i>name
+                <i className='icon'><MdCall/></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+2349038464244</p>
               </div>
 
             </div>
@@ -74,12 +74,17 @@ const Contact = () => {
   )
 }
 const Wrapper = styled.section`
- 
- .row{
+.contact{
+  width: 100%;
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.row{
   width: 100%;
   display: flex;
   flex-direction: row;
- }
+}
 .row-two{
   width: 100%;
   display: flex;
@@ -259,6 +264,9 @@ input, textarea{
   }
 }
 @media screen and (max-width: 950px) {
+  .contact{
+    padding: 30px 10px;
+  }
   .row{
     flex-direction: column;
   }

@@ -1,36 +1,43 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { BiLink, BiPlus } from 'react-icons/bi';
 
 const images = [
   {
     src: './img/portfolio/portfolio-1.jpg',
     alt: 'Screenshot of App 1',
-    category: 'App'
+    category: 'App',
+    title: 'App 1'
   },
   {
     src: './img/portfolio/portfolio-2.jpg',
     alt: 'Screenshot of Website 1',
-    category: 'Website'
+    category: 'Website',
+    title: 'Website 1'
   },
   {
     src: './img/portfolio/portfolio-3.jpg',
     alt: 'Screenshot of Blog 1',
-    category: 'Blog'
+    category: 'Blog',
+    title: 'Blog 1'
   },
   {
     src: './img/portfolio/portfolio-4.jpg',
     alt: 'Screenshot of App 2',
-    category: 'App'
+    category: 'App',
+    title: 'App 2'
   },
   {
     src: './img/portfolio/portfolio-5.jpg',
     alt: 'Screenshot of Website 2',
-    category: 'Website'
+    category: 'Website',
+    title: 'Website 2'
   },
   {
     src: './img/portfolio/portfolio-6.jpg',
     alt: 'Screenshot of Blog 2',
-    category: 'Blog'
+    category: 'Blog',
+    tile: 'Blog 2'
   }
 ];
 
@@ -60,6 +67,14 @@ function GroupPortfolio() {
                 <div className="portfolio-item" key={index}>
                   <div className="portfolio-wrap">
                     <img src={image.src} alt={image.alt} />
+                    <div className="portfolio-info">
+                      <h4>{image.title}</h4>
+                      <p>{image.category}</p>
+                      <div class="portfolio-links">
+                        <a href={image.src} data-gallery="portfolioGallery" className="portfolio-lightbox" title={image.title}><i><BiPlus/></i></a>
+                        <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"><BiLink/></i></a>
+                      </div>
+                    </div>
                   </div>
                   
                 </div>

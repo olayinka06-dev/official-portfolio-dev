@@ -44,8 +44,24 @@ p, li{
   --navshadow: 0px 4px 4px rgb(222, 225, 232);
   --hover: #272829;
 }
-
 .dark-mode{
+  --letter:rgb(219, 219, 219);
+  --navigationbody: black;
+  --mainbody: white;
+  --herobackground: rgba(5, 13, 24, 0.3);
+  --activehover: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  --navlinkbackground: rgb(32,33,35);
+  --navlinkcolor: white;
+  --herocolor: hsl(136, 65%, 51%);
+  --herospan: hsl(192, 70%, 51%);
+  --text: white;
+  --social: #45505b;
+  --sectionbackground: black;
+  --navshadow: 0px 4px 4px rgb(222, 225, 232);
+  --hover: #272829;
+}
+
+/* .dark-mode{
   --navigationbody:  rgb(32,33,35);
   --mainbody: rgb(32,33,35);
   --herobackground: rgba(5, 13, 24, 0.3);
@@ -60,10 +76,6 @@ p, li{
   --sectionbackground: rgb(32,33,35);
   --navshadow: black;
   --hover: hsl(136, 65%, 51%);
-
-}
-/* .app{
-background-color: var(--mainbody) !important;
 
 } */
 
@@ -102,7 +114,7 @@ section {
   height: 3px;
   background: var(--activehover);
   bottom: 0;
-  left: calc(48% - 20px);
+  left: calc(48% - 13px);
   animation: animate 4s linear infinite;
 }
 @keyframes animate{
