@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect } from 'react';
 import { BiEnvelope } from 'react-icons/bi';
 import { MdCall, MdLocationPin } from 'react-icons/md';
 import styled from 'styled-components';
@@ -85,6 +85,7 @@ const Wrapper = styled.section`
   padding-top: 40px;
   padding-right: 10px;
   padding-bottom: 20px;
+  background-color: var(--sectionbackground);
 }
 .row{
   width: 100%;
@@ -121,16 +122,16 @@ input, textarea{
 }
 .form-control{
   border: 1px solid rgb(206,212,218);
-  outline-color: lime;
+  outline-color: var(--herocolor);
+  background-color: var(--navlinkbackground);
 }
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: rgb(49,211,92);;
+  color: var(--herocolor);;
   float: left;
   width: 44px;
   height: 44px;
@@ -147,14 +148,14 @@ input, textarea{
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: var(--herocolor);
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: var(--text);
 }
 
 .contact .info .email,
@@ -167,20 +168,19 @@ input, textarea{
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+  background: var(--activehover);
   color: white;
 }
 
-.contact .php-email-form {
+.contact form {
   width: 100%;
-  background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.contact form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -189,11 +189,11 @@ input, textarea{
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -202,14 +202,14 @@ input, textarea{
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -222,22 +222,22 @@ input, textarea{
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact form input,
+.contact form textarea {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input {
+.contact form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact form button[type=submit] {
   background: var(--activehover);
   border: 0;
   padding: 10px 35px;
@@ -246,7 +246,7 @@ input, textarea{
   border-radius: 50px;
 }
 
-/* .contact .php-email-form button[type=submit]:hover {
+/* .contact form button[type=submit]:hover {
   background: #0678e3;
 } */
 

@@ -132,7 +132,7 @@ const About = () => {
             </div>
 
             <div class="progress">
-              <span class="skill">Mongoose & Moongo DB<i class="val">55%</i></span>
+              <span class="skill">Mongoose & Moongo DB<i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div data-aos="fade-right" className="progress-bar" style={{width: "75%"}}></div>
               </div>

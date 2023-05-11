@@ -12,7 +12,7 @@ import '../../index.css';
 
 
 
-const NavigationBar = ({backgroundSwitcher, handleToggleSwitcher}) => {
+const NavigationBar = ({backgroundSwitcher, handleToggleSwitcher, checked}) => {
   const [activeLink, setActiveLink] = useState('hero');
   const [menu, setMenu] = useState(false);
 
@@ -23,18 +23,23 @@ const NavigationBar = ({backgroundSwitcher, handleToggleSwitcher}) => {
   const handleSetActive = (to) => {
     setActiveLink(to);
   }
-  // const handleChange = (event) => {
-  //   setIsChecked(event.target.checked);
-  // };
+
 
 
   return (
     <Wrapper>
       <aside  className={`${menu ? 'mobile-toggler' : ''}`}>
-        {/* <Toggle>
-          <input type="checkbox" checked={checked} onChange={onChange} />
-          <span className='indicate'></span>
-        </Toggle> */}
+        <Theme style={{display: `${menu ? "none" : "flex"}`}}>
+          <span>Theme</span>
+          <Switcher>
+            <Toggle>
+              <input type="checkbox" checked={checked} onChange={handleToggleSwitcher} />
+              <span className='indicate'></span>
+            </Toggle>
+            <div>{backgroundSwitcher}</div>
+          </Switcher>
+
+        </Theme>
         <div class="profile box-4">
           <img src={profileimg} alt={profileimg} />
           <h1 class="text-light">Olayinka_Dev</h1>
@@ -58,9 +63,9 @@ const NavigationBar = ({backgroundSwitcher, handleToggleSwitcher}) => {
             <li className={activeLink === 'contact' ? 'active' : ''}>
               <Link to="contact" smooth={true} duration={500} spy={true} offset={-70} onClick={() => handleSetActive('contact')}><AiOutlineMail className='icon'/>Contact</Link>
             </li>
-            <li>
+            {/* <li>
                 <Link onClick={handleToggleSwitcher}>{backgroundSwitcher}</Link>
-            </li>
+            </li> */}
         </ul>
         <button onClick={toggleMenu} className={`${menu ? 'toggle open' : 'toggle'}`}>
           <div className="first"></div>
@@ -71,49 +76,76 @@ const NavigationBar = ({backgroundSwitcher, handleToggleSwitcher}) => {
     </Wrapper>
   );
 }
-// const Toggle = styled.label`
-//   position: relative;
-//   display: inline-block;
-//   width: 60px;
-//   height: 28px;
-//   input {
-//     opacity: 0;
-//     width: 0;
-//     height: 0;
-//   }
-//   .indicate {
-//     position: absolute;
-//     cursor: pointer;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-color: var(--toggle-color);
-//     -webkit-transition: .4s;
-//     transition: .4s;
-//     border-radius: 34px;
-//   }
-//   span:before {
-//     position: absolute;
-//     content: "";
-//     height: 22px;
-//     width: 26px;
-//     left: 4px;
-//     bottom: 3px;
-//     background-color: white;
-//     -webkit-transition: .4s;
-//     transition: .4s;
-//     border-radius: 50%;
-//   }
-//   input:checked + span {
-//     background-color: var(--toggle-color);
-//   }
-//   input:checked + span:before {
-//     -webkit-transform: translateX(26px);
-//     -ms-transform: translateX(26px);
-//     transform: translateX(26px);
-//   }
-// `;
+const Switcher = styled.div`
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+`
+const Theme = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  span{
+    color: var(--herocolor);
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 40%;
+    position: fixed;
+    left: 2%;
+    top: 3%;
+  }
+
+`;
+const Toggle = styled.label`
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .indicate {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--navlinkbackground);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  span:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 26px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  input:checked + span {
+    background-color: var(--navlinkbackground);
+  }
+  input:checked + span:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+`;
 const Wrapper = styled.aside`
 
   aside{
@@ -289,7 +321,7 @@ const Wrapper = styled.aside`
   @media screen and (max-width: 992px) {
     aside {
       width: 300px;
-      background: var(--mainbody);
+      background: var(--navigationbody);
       border-right: 1px solid #e6e9ec;
       height: 100vh;
       left: -300px;

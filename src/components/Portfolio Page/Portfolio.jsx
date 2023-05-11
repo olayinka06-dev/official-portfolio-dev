@@ -41,7 +41,7 @@ const images = [
   }
 ];
 
-function GroupPortfolio() {
+const GroupPortfolio = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
 
   return (
@@ -89,6 +89,9 @@ function GroupPortfolio() {
 
 
 const Wrapper = styled.section`
+.portfolio{
+  background-color: var(--sectionbackground);
+}
 .top{
   width: 100%;
   display: flex;
@@ -112,7 +115,6 @@ const Wrapper = styled.section`
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -125,7 +127,7 @@ const Wrapper = styled.section`
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--text);
   /* color: var(--herocolor); */
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
@@ -133,7 +135,7 @@ const Wrapper = styled.section`
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.active {
-  color: hsl(136, 65%, 51%);
+  color: var(--herocolor);
 }
 
 .portfolio #portfolio-flters li:last-child {
