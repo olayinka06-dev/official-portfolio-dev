@@ -1,7 +1,7 @@
 const ServiceData = [
     {
         src: "",
-        name: "",
+        name: "Bank Application",
         languages: [
             "HTML",
             "CSS",
@@ -12,8 +12,8 @@ const ServiceData = [
         ]
     },
     {
-        src: "Chat application",
-        name: "",
+        src: "",
+        name: "Chat Application",
         languages: [
             "HTML",
             "CSS",
