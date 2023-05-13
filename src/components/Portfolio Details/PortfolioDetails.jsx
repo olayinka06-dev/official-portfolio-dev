@@ -1,28 +1,22 @@
-import { useState, useEffect } from 'react';
-import Swiper from 'swiper';
+import { useEffect } from 'react';
 import styled from 'styled-components';
-import SwiperCore, { Pagination, Navigation } from 'swiper';
-import 'swiper/swiper-bundle.css';
-SwiperCore.use([Pagination, Navigation]);
+import Swiper from 'swiper';
 
 
 
 const PortfolioDetails = () => {
-    const [swiper, setSwiper] = useState(null);
-
-    useEffect(() => {
-        const newSwiper = new Swiper('.swiper-container', {
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        });
-        setSwiper(newSwiper);
+  useEffect(() => {
+    const newSwiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   }, []);
   return (
     <Wrapper>
