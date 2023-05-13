@@ -12,51 +12,54 @@ const ServiceData = [
         ]
     },
     {
-        src: "",
+        src: "Chat application",
         name: "",
         languages: [
             "HTML",
             "CSS",
             "React",
-            "Node Js",
-            "Mongo DB",
+            "Socket.IO,",
+            "Node.js",
             "Mongoose",
         ]
     },
     {
         src: "",
-        name: "",
+        name: "E-commerce website",
         languages: [
             "HTML",
             "CSS",
             "React",
-            "Node Js",
-            "Mongo DB",
-            "Mongoose",
+            "Express",
+            "Node.js",
+            "MongoDB",
+            "Redux"
         ]
     },
     {
         src: "",
-        name: "",
+        name: "Social media platform",
         languages: [
             "HTML",
             "CSS",
             "React",
             "Node Js",
             "Mongo DB",
-            "Mongoose",
+            "Express",
+            "Redux"
         ]
     },
     {
         src: "",
-        name: "",
+        name: "Video streaming app",
         languages: [
             "HTML",
             "CSS",
             "React",
             "Node Js",
             "Mongo DB",
-            "Mongoose",
+            "Express",
+            "Redux"
         ]
     },
     {
