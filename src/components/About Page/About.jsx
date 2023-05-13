@@ -25,6 +25,7 @@ const About = () => {
             I am passionate about technology and constantly stay up-to-date with the latest industry trends and advancements. My goal is to use my skills and experience to create innovative and impactful web solutions that make a difference in people's lives.
             Thank you for visiting my portfolio website, and I look forward to connecting with you!
           </p> */}
+          {/* <p>Hi there! I'm a web developer and an undergraduate medical student. I'm passionate about both fields and love to explore the intersection between technology and healthcare.</p> */}
           <p>
             Hello, my name is Idiagbon Saadu Abdulrahman also Known as Olayinka_Dev, and I am a frontend and backend developer with experience in UI/UX design. I am passionate about creating responsive and user-friendly web applications that provide a great user experience.
             As a full-stack developer, I am proficient in languages such as HTML, CSS, JavaScript, Express js, ejs, Mongo Db and Mongoose. I enjoy working on both the frontend and backend of web applications and have experience in developing dynamic web pages and user interfaces that are visually appealing and easy to use.
