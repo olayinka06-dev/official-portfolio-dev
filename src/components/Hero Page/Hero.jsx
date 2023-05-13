@@ -12,7 +12,7 @@ import '../../index.css';
 
 const Hero = () => {
 
-  const [texts] = useState(["I'm a Web-Developer", "I'm a Fullstack-Developer", "I'm a Frontend-Developer", "I'm a Backend-Developer", "I'm a FreeLancer"]);
+  const [texts] = useState(["I'm a Senior Web-Developer", "I'm a Fullstack-Developer", "I'm a Frontend-Developer", "I'm a Backend-Developer", "I'm a FreeLancer"]);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
 
@@ -42,10 +42,9 @@ const Hero = () => {
       <div id="hero">
         <div class="container box-1">
           <h1>Olayinka<span>_Dev</span></h1>
-          {/* <p>I'm a Senior Web-Developer</p> */}
-          <div>
+          <Typical>
             <p>{currentText}</p>
-          </div>
+          </Typical>
           {/* <Typical
             steps={[`I'm a Web-Developer`, 3000 , `I'm a Freelancer`, 3000, `I'm a Senior MERN Developer`, 3000]}
             loop={Infinity}
@@ -63,7 +62,15 @@ const Hero = () => {
   )
 }
 
+const Typical = styled.div`
+  
+overflow: hidden;
 
+p{
+  overflow: hidden;
+}
+
+`
 
 const Wrapper = styled.div`
 
