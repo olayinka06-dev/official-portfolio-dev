@@ -45,10 +45,6 @@ const Hero = () => {
           {/* <p>I'm a Senior Web-Developer</p> */}
           <div>
             <p>{currentText}</p>
-            <p>{texts[(currentTextIndex + 1) % texts.length]}</p>
-            <p>{texts[(currentTextIndex + 2) % texts.length]}</p>
-            <p>{texts[(currentTextIndex + 3) % texts.length]}</p>
-            <p>{texts[(currentTextIndex + 4) % texts.length]}</p>
           </div>
           {/* <Typical
             steps={[`I'm a Web-Developer`, 3000 , `I'm a Freelancer`, 3000, `I'm a Senior MERN Developer`, 3000]}
