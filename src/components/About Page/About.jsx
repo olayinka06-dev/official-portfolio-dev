@@ -26,13 +26,14 @@ const About = () => {
             Thank you for visiting my portfolio website, and I look forward to connecting with you!
           </p> */}
           {/* <p>Hi there! I'm a web developer and an undergraduate medical student. I'm passionate about both fields and love to explore the intersection between technology and healthcare.</p> */}
-          <p>
+          {/* <p>
             Hello, my name is Idiagbon Saadu Abdulrahman also Known as Olayinka_Dev, and I am a frontend and backend developer with experience in UI/UX design. I am passionate about creating responsive and user-friendly web applications that provide a great user experience.
             As a full-stack developer, I am proficient in languages such as HTML, CSS, JavaScript, Express js, ejs, Mongo Db and Mongoose. I enjoy working on both the frontend and backend of web applications and have experience in developing dynamic web pages and user interfaces that are visually appealing and easy to use.
             In addition to my technical skills, I have experience working as a UI/UX designer, which has given me a keen eye for design and user experience. I strive to create beautiful and intuitive user interfaces that are easy to navigate and use.
             As a freelancer, I have had the opportunity to work with a variety of clients and industries, which has helped me develop strong communication and project management skills. I am committed to delivering high-quality work that meets my clients' needs and exceeds their expectations.
             Thank you for visiting my portfolio website, and I look forward to the opportunity to work with you!
-          </p>
+          </p> */}
+          <p>Hello, and welcome to my portfolio website!. My name is Idiagbon Saadu Abdulrahman also known as Olayinka_Dev, and I'm a versatile professional Frontend, Backend, and Full-stack developer. I specialize in creating responsive and dynamic websites and web applications using the latest technologies and frameworks. Let me tell you a little bit about myself.</p>
         </div>
 
         <div className="about-flex">
