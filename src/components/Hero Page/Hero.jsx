@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import {AiOutlineTwitter} from 'react-icons/ai';
 import {RiFacebookFill} from 'react-icons/ri';
@@ -12,6 +12,25 @@ import '../../index.css';
 
 const Hero = () => {
 
+  const [texts, setTexts] = useState(["I'm a Web-Developer", "I'm a Fullstack-Developer", "I'm a Frontend-Developer", "I'm a Backend-Developer", "I'm a FreeLancer"]);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [currentText, setCurrentText] = useState("");
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentText(prevText => {
+        const message = texts[currentTextIndex];
+        const nextChar = message.charAt(prevText.length);
+        if (prevText.length < message.length) {
+          return prevText + nextChar;
+        } else {
+          setCurrentTextIndex((currentTextIndex + 1) % texts.length);
+          return "";
+        }
+      });
+    }, 100);
+    return () => clearInterval(intervalId);
+  }, [currentTextIndex, texts]);
 
   window.addEventListener('load', function() {
     var box1 = document.querySelector('.box-1');
@@ -23,7 +42,14 @@ const Hero = () => {
       <div id="hero">
         <div class="container box-1">
           <h1>Olayinka<span>_Dev</span></h1>
-          <p>I'm a Senior Web-Developer</p>
+          {/* <p>I'm a Senior Web-Developer</p> */}
+          <div>
+            <p>{currentText}</p>
+            <p>{texts[(currentTextIndex + 1) % texts.length]}</p>
+            <p>{texts[(currentTextIndex + 2) % texts.length]}</p>
+            <p>{texts[(currentTextIndex + 3) % texts.length]}</p>
+            <p>{texts[(currentTextIndex + 4) % texts.length]}</p>
+          </div>
           {/* <Typical
             steps={[`I'm a Web-Developer`, 3000 , `I'm a Freelancer`, 3000, `I'm a Senior MERN Developer`, 3000]}
             loop={Infinity}
