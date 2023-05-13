@@ -6,18 +6,18 @@ import Swiper from 'swiper';
 
 const PortfolioDetails = () => {
   useEffect(() => {
-    const newSwiper = new Swiper('.swiper-container', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  }, []);
+      new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }, []);
   return (
     <Wrapper>
         <div className="swiper-container">
