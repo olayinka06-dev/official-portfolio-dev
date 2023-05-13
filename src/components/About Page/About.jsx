@@ -60,8 +60,8 @@ const About = () => {
               </div>
             </div>
             <p className='about-paragraph'>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+              My development philosophy centers on creating efficient and clean code that is both maintainable and scalable.
+              I enjoy exploring new technologies and staying up-to-date on the latest trends in web development. I'm always looking for new challenges and opportunities to improve my skills and make a positive impact in the world.
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ const About = () => {
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>This are some skills and the languages i can use to work conveniently, I can teach and work with this language in a easy and modern way, If you need any of this </p>
+          <p>These are some of the skills I possess and the programming languages I am proficient in. I am capable of instructing and utilizing these languages in a simple and up-to-date manner. If you require assistance with any of these, please let me know.</p>
         </div>
 
         <div class="row skills-content">
