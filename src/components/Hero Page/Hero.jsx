@@ -12,7 +12,7 @@ import '../../index.css';
 
 const Hero = () => {
 
-  const [texts, setTexts] = useState(["I'm a Web-Developer", "I'm a Fullstack-Developer", "I'm a Frontend-Developer", "I'm a Backend-Developer", "I'm a FreeLancer"]);
+  const [texts] = useState(["I'm a Web-Developer", "I'm a Fullstack-Developer", "I'm a Frontend-Developer", "I'm a Backend-Developer", "I'm a FreeLancer"]);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
 

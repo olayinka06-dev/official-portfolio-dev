@@ -43,8 +43,7 @@ const About = () => {
           <div className="about-left" data-aos='fade-left'>
             <h3>Web <span className='about-me-color'>Developer.</span></h3>
             <p className="about-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              As a full-stack developer, I am proficient in languages such as HTML, CSS, JavaScript, Express js, ejs, Mongo Db and Mongoose. I enjoy working on both the frontend and backend of web applications and have experience in developing dynamic web pages and user interfaces that are visually appealing and easy to use.
             </p>
             <div className="about-content">
               <div className="about-info">
