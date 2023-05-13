@@ -72,7 +72,7 @@ const GroupPortfolio = () => {
                       <p>{image.category}</p>
                       <div class="portfolio-links">
                         <a href={image.src} data-gallery="portfolioGallery" className="portfolio-lightbox" title={image.title}><i><BiPlus/></i></a>
-                        <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"><BiLink/></i></a>
+                        <a href={"/portfolio-details"} className="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"><BiLink/></i></a>
                       </div>
                     </div>
                   </div>

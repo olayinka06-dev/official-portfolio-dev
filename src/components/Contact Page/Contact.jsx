@@ -121,7 +121,7 @@ input, textarea{
   flex-grow: 9;
 }
 .form-control{
-  border: 1px solid rgb(206,212,218);
+  border: 1px solid var(--inputborder);
   outline-color: var(--herocolor);
   background-color: var(--navlinkbackground);
 }
@@ -240,15 +240,18 @@ input, textarea{
 .contact form button[type=submit] {
   background: var(--activehover);
   border: 0;
-  padding: 10px 35px;
+  padding: 12px 35px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  opacity: 100%;
+  cursor: pointer;
 }
 
-/* .contact form button[type=submit]:hover {
-  background: #0678e3;
-} */
+.contact form button[type=submit]:hover {
+  padding: 12px 49px;
+  opacity: 79%;
+}
 
 @-webkit-keyframes animate-loading {
   0% {

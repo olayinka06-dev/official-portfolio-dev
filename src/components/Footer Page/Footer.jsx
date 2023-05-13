@@ -13,7 +13,7 @@ const Footer = () => {
   }, []);
   return (
     <Wrapper>
-        <footer id="footer" data-aos="fade-up">
+        <section id="footer" className='footer' data-aos="fade-up">
             <div class="container">
               <h3>Olayinka_Dev</h3>
               <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
@@ -27,23 +27,23 @@ const Footer = () => {
                 &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
               </div>
               <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">Olayinka_Dev</a>
+                Designed by <a style={{color: "blue", textDecoration: "none"}} href="https://bootstrapmade.com/">Olayinka_Dev</a>
               </div>
             </div>
-        </footer>
+        </section>
     </Wrapper>
   )
 }
 const Wrapper = styled.div`
 
-#footer {
+.footer {
   background: #f7f8f9;
   color: #45505b;
   font-size: 14px;
   text-align: center;
   width: 100%;
-  padding-top: 40px;
-  padding-right: 10px;
+  margin-top: 30px;
+  /* padding-top: 40px; */
   padding-bottom: 20px;
   background-color: var(--sectionbackground);
 }
@@ -55,6 +55,7 @@ const Wrapper = styled.div`
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
+  color: var(--herocolor);
 }
 
 #footer p {
@@ -62,6 +63,7 @@ const Wrapper = styled.div`
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
+  color: var(--text);
 }
 
 #footer .social-links {
@@ -71,8 +73,8 @@ const Wrapper = styled.div`
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
-  color: #fff;
+  color: var(--herocolor);
+  background: #eef7ff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -84,7 +86,7 @@ const Wrapper = styled.div`
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: var(--activehover);
   color: #fff;
   text-decoration: none;
 }
@@ -92,11 +94,19 @@ const Wrapper = styled.div`
 #footer .copyright {
   margin: 0 0 5px 0;
   font-family: "Poppins", sans-serif;
+  color: var(--text);
+
 }
 
 #footer .credits {
   font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  color: var(--text);
 }
-
+@media screen and (max-width: 992px) {
+  .footer{
+    padding: 30px 10px;
+  }
+}
 `
 export default Footer;

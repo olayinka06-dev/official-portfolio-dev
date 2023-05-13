@@ -25,7 +25,7 @@ p, li{
   --social: #45505b;
   --sectionbackground: white;
   --navshadow: 0px 4px 4px rgb(222, 225, 232);
-  --hover: #272829;
+  --inputborder: rgb(206,212,218);
 }
 
 .light-mode{
@@ -42,24 +42,25 @@ p, li{
   --social: #45505b;
   --sectionbackground: white;
   --navshadow: 0px 4px 4px rgb(222, 225, 232);
-  --hover: #272829;
+  --inputborder: rgb(206,212,218);
 }
 .dark-mode{
   --letter:rgb(219, 219, 219);
   --navigationbody: black;
-  --mainbody: white;
+  --mainbody: black;
   --herobackground: rgba(5, 13, 24, 0.3);
-  --activehover: rgb(165,70,238);
+  --activehover: #5983FC;
   --navlinkbackground: rgb(32,33,35);
   --navlinkcolor: white;
-  --herocolor: rgb(165,70,238);
-  --herospan: rgb(165,70,238);
+  --herocolor: #5983FC;
+  --herospan: #5983FC;
   --text: white;
   --social: #45505b;
   --sectionbackground: black;
   --navshadow: 0px 4px 4px rgb(222, 225, 232);
-  --hover: #272829;
+  --inputborder: black;
 }
+
 /* .dark-mode{
   --letter:rgb(219, 219, 219);
   --navigationbody: black;
@@ -150,7 +151,7 @@ section {
   color: var(--text);
 }
 @media (min-width: 992px) {
-  section, footer {
+  section{
     padding-left: 160px;
   }
 }

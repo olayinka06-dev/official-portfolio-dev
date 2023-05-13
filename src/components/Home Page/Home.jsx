@@ -21,7 +21,7 @@ const Home2 = () => {
   
     return (
       <Wrapper>
-        <div className={ `app ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+        <div className={`app ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
           <header>
             <NavigationBar 
               handleToggleSwitcher={handleToggleMode}
@@ -48,7 +48,9 @@ const Home2 = () => {
   }
   
 const Wrapper = styled.div`
-
+  .app{
+    background-color: var(--mainbody);
+  }
   .icon{
     color: var(--text);
   }

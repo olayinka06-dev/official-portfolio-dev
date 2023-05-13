@@ -203,6 +203,9 @@ const Wrapper = styled.aside`
   li:hover a {
   color: white;
   }
+  li:hover .icon {
+  color: white;
+  }
 
   li.active {
     background: var(--activehover);
@@ -211,7 +214,9 @@ const Wrapper = styled.aside`
   li.active a {
     color: white;
   }
-
+  li.active .icon{
+    color: white;
+  }
   li a {
     color: var(--navlinkcolor);
     display: flex;

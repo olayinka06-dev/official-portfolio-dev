@@ -116,7 +116,7 @@ const Wrapper = styled.div`
     color: var(--herospan)
   }
   .container p {
-    color: var(--letter);
+    color: var(--text);
     margin: 15px 0 0 0;
     font-size: 26px;
     font-family: "Poppins", sans-serif;
@@ -128,17 +128,18 @@ const Wrapper = styled.div`
   .social-links a {
     font-size: 24px;
     display: inline-block;
-    color: var(--social);
     line-height: 1;
     margin-right: 20px;
     transition: 0.3s;
     padding: 9px 12px;
     border-radius: 50%;
+    color: var(--herocolor);
+    background: #eef7ff;
   }
 
   .social-links a:hover {
     color: white;
-    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+    background: var(--activehover);
   }
 
 
