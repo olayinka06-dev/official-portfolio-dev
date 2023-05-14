@@ -10,6 +10,7 @@ import NavigationBar from '../Navigation Page/NavigationBar';
 import Portfolio from '../Portfolio Page/Portfolio';
 import styled from 'styled-components';
 import Footer from '../Footer Page/Footer';
+import Services from '../Services page/Services';
 
 
 
@@ -35,6 +36,7 @@ const Home2 = () => {
             <Hero/>
             <About/>
             <Portfolio/>
+            <Services/>
             <Contact/>
             <BackToTop/>
           </main>

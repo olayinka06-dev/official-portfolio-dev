@@ -44,6 +44,8 @@ const About = () => {
             <h3>Web <span className='about-me-color'>Developer.</span></h3>
             <p className="about-paragraph">
               As a full-stack developer, I am proficient in languages such as HTML, CSS, JavaScript, Express js, ejs, Mongo Db and Mongoose. I enjoy working on both the frontend and backend of web applications and have experience in developing dynamic web pages and user interfaces that are visually appealing and easy to use.
+              As a freelancer, I have had the opportunity to work with a variety of clients and industries, which has helped me develop strong communication and project management skills. I am committed to delivering high-quality work that meets my clients' needs and exceeds their expectations.
+              Thank you for visiting my portfolio website, and I look forward to the opportunity to work with you!
             </p>
             <div className="about-content">
               <div className="about-info">
