@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import website from '../images/Top-6-Front-End-Web-Development-Tools-to-Increase-Your-Productivity-in-2020-1.jpg';
-import app from '../images/mobileapp.jpg';
+import app from '../images/7-popular-business-applications-mobile-phones-2.png.webp';
 import '../../index.css';
 import ServiceData from './ServiceData';
 import {IoIosArrowForward, IoMdBookmark} from 'react-icons/io';
@@ -117,7 +117,7 @@ const Wrapper = styled.section`
 }
 
 .icon:hover img {
-  transform: scale(3.05);
+  transform: scale(1.05);
   opacity: 90%;
 }
 ul {
