@@ -124,11 +124,15 @@ ul {
   text-decoration: none;
   list-style: none;
 }
+.app, .website{
+  margin-top: 20px;
+}
 .website li{
   display: flex;
   flex-direction: row;
   align-items: center;
   color: var(--text);
+  gap: 20px;
 }
 .app li{
   display: flex;
