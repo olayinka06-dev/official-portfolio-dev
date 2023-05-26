@@ -92,6 +92,9 @@ const GroupPortfolio = () => {
 const Wrapper = styled.section`
 .portfolio{
   background-color: var(--sectionbackground);
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 20px;
 }
 .top{
   width: 100%;

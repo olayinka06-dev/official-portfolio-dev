@@ -106,6 +106,7 @@ const Wrapper = styled.section`
   width: 100%;
   box-shadow: var(--serviceshadow);
   border: 1px solid var(--border);
+  border-radius: 10px;
 }
 .info{
   padding: 20px;
