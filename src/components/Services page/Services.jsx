@@ -44,7 +44,7 @@ const Services = () => {
                   {
                     services && (
                       services[0].languages.map((language, index) => (
-                        <ul key={index}>
+                        <ul className='website' key={index}>
                           <li  style={{ paddingLeft: `${(index + 1) * 5}px` }}>{language.icon} <span>{language.name}</span></li>
                         </ul>
                       ))
@@ -72,7 +72,7 @@ const Services = () => {
                   {
                     services && (
                       services[1].languages.map((language, index) => (
-                        <ul key={index}>
+                        <ul className='app' key={index}>
                           <li  style={{ paddingLeft: `${(index + 1) * 5}px` }}>{language.icon} <span>{language.name}</span></li>
                         </ul>
                       ))
@@ -124,7 +124,13 @@ ul {
   text-decoration: none;
   list-style: none;
 }
-ul li{
+.website li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text);
+}
+.app li{
   display: flex;
   flex-direction: row;
   align-items: center;
