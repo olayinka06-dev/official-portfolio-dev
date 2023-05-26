@@ -124,6 +124,10 @@ ul {
   text-decoration: none;
   list-style: none;
 }
+ul li{
+  word-spacing: 20px;
+  color: var(--text);
+}
 ul li svg{
   color: var(--herospan);
 }
