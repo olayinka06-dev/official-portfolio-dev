@@ -65,7 +65,9 @@ const GroupPortfolio = () => {
               .map((image, index) => (
                 <div className="portfolio-item" key={index}>
                   <div className="portfolio-wrap">
-                    <img src={image.src} alt={image.alt} />
+                    <div className="image-container">
+                      <img src={image.src} alt={image.alt} />
+                    </div>
                     <div className="portfolio-info">
                       <h4>{image.title}</h4>
                       <p>{image.category}</p>
@@ -147,11 +149,27 @@ const Wrapper = styled.section`
   transition: all 3s ease;
 
 }
-.portfolio-wrap img{
+.image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Adjust the aspect ratio as needed */
+    position: relative;
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  animation: scale 9s linear infinite;
+  }
+/* .portfolio-wrap img{
   width: 100%;
   transition: all 3s ease;
   animation: scale 9s linear infinite;
-}
+} */
 @keyframes scale {
   0%{transform: scaleX(110%) scaleY(105%);}
   50%{transform: scaleX(100%) scaleY(95%);}
