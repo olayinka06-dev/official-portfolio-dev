@@ -45,7 +45,7 @@ const Services = () => {
                     services && (
                       services[0].languages.map((language, index) => (
                         <ul key={index}>
-                          <li><IoMdBookmark/>{language}</li>
+                          <li>{language.icon} {language.name}</li>
                         </ul>
                       ))
                     )
@@ -73,7 +73,7 @@ const Services = () => {
                     services && (
                       services[1].languages.map((language, index) => (
                         <ul key={index}>
-                          <li><IoMdBookmark/>{language}</li>
+                          <li>{language.icon} {language.name}</li>
                         </ul>
                       ))
                     )

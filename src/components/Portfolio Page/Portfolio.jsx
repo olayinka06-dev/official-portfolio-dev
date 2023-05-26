@@ -61,7 +61,6 @@ const GroupPortfolio = () => {
           </ul>
           </div>
           <div className="row portfolio-container" >
-            
             {images.filter(image => selectedFilter === 'All' || image.category === selectedFilter)
               .map((image, index) => (
                 <div className="portfolio-item" key={index}>
@@ -107,7 +106,6 @@ const Wrapper = styled.section`
   display: inline-block; 
   vertical-align: top; 
   transition: all 3s ease;
-  position: relative;
 }
 
 .portfolio #portfolio-flters {
