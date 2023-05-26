@@ -125,7 +125,8 @@ ul {
   list-style: none;
 }
 .app, .website{
-  margin-top: 20px;
+  position: relative;
+  top: 20px;
 }
 .website li{
   display: flex;
