@@ -4,7 +4,7 @@ import website from '../images/Top-6-Front-End-Web-Development-Tools-to-Increase
 import app from '../images/7-popular-business-applications-mobile-phones-2.png.webp';
 import '../../index.css';
 import ServiceData from './ServiceData';
-import {IoIosArrowForward, IoMdBookmark} from 'react-icons/io';
+import {IoIosArrowForward} from 'react-icons/io';
 
 const Services = () => {
 
