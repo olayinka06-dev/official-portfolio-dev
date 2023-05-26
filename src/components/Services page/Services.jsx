@@ -45,7 +45,7 @@ const Services = () => {
                     services && (
                       services[0].languages.map((language, index) => (
                         <ul key={index}>
-                          <li  style={{ paddingLeft: `${(index + 1) * 5}px` }}>{language.icon} {language.name}</li>
+                          <li  style={{ paddingLeft: `${(index + 1) * 5}px` }}>{language.icon} <span>{language.name}</span></li>
                         </ul>
                       ))
                     )
@@ -73,7 +73,7 @@ const Services = () => {
                     services && (
                       services[1].languages.map((language, index) => (
                         <ul key={index}>
-                          <li  style={{ paddingLeft: `${(index + 1) * 5}px` }}>{language.icon} {language.name}</li>
+                          <li  style={{ paddingLeft: `${(index + 1) * 5}px` }}>{language.icon} <span>{language.name}</span></li>
                         </ul>
                       ))
                     )
@@ -125,7 +125,10 @@ ul {
   list-style: none;
 }
 ul li{
-  word-spacing: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
   color: var(--text);
 }
 ul li svg{
