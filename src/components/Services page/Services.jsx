@@ -104,7 +104,7 @@ const Wrapper = styled.section`
 }
 .card {
   width: 100%;
-  box-shadow: 0px 5px 10px #d4d4d4, 0px 2px 2px #d4d4d4, 0px 2px 2px #d4d4d4, 0px 2px 2px #d4d4d4;
+  box-shadow: var(--serviceshadow);
 }
 .info{
   padding: 20px;
@@ -127,6 +127,9 @@ ul {
 .app, .website{
   position: relative;
   top: 20px;
+}
+li{
+  color: var(--text);
 }
 .website li{
   display: flex;
