@@ -50,14 +50,14 @@ const Contact = () => {
             <form action="" className="php-email-form">
               <div className="row-two">
                 <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Your Name" required/>
+                  <input type="text" name='firstname' className="form-control" placeholder="Your FirstName" required/>
                 </div>
                 <div className="form-group">
-                  <input type="email" className="form-control" placeholder="Your Email" required />
+                  <input type="text" name='lastname' className="form-control" placeholder="Your LastName" required />
                 </div>
               </div>
               <div classname="form-group">
-                <input type="text" className="form-control" placeholder="Subject" required/>
+                <input type="email" name='email' className="form-control" placeholder="Your Email" required/>
               </div>
               <div classname="form-group">
                 <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
