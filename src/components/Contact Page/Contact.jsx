@@ -109,6 +109,7 @@ input{
 }
 input, textarea{
   width: 100%;
+  resize: none;
 } 
 .first{
   flex-grow: 4;
