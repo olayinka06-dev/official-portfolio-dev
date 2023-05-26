@@ -171,9 +171,9 @@ const Wrapper = styled.section`
   animation: scale 9s linear infinite;
 } */
 @keyframes scale {
-  0%{transform: scaleX(110%) scaleY(105%);}
-  50%{transform: scaleX(100%) scaleY(95%);}
-  100%{transform: scaleX(90%) scaleY(80%);}
+  0%{transform: scaleX(110%);}
+  50%{transform: scaleX(100%);}
+  100%{transform: scaleX(90%);}
 }
 .portfolio .portfolio-wrap::before {
   content: "";
