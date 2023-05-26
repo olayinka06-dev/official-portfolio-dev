@@ -163,17 +163,12 @@ const Wrapper = styled.section`
     width: 100%;
     height: 100%;
     object-fit: cover;
-  animation: scale 9s linear infinite;
+    animation: scale 9s linear infinite;
   }
-/* .portfolio-wrap img{
-  width: 100%;
-  transition: all 3s ease;
-  animation: scale 9s linear infinite;
-} */
 @keyframes scale {
   0%{transform: scaleX(110%);}
   50%{transform: scaleX(100%);}
-  100%{transform: scaleX(90%);}
+  100%{transform: scaleX(110%);}
 }
 .portfolio .portfolio-wrap::before {
   content: "";
