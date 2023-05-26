@@ -1,4 +1,5 @@
-import React, {useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import { BiEnvelope } from 'react-icons/bi';
 import { MdCall, MdLocationPin } from 'react-icons/md';
 import styled from 'styled-components';
@@ -9,6 +10,19 @@ const Contact = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_crx3kho', 'template_09ehw19', form.current, 'u2nfu0FS3Hq8iz7Hh')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <Wrapper>
@@ -47,7 +61,7 @@ const Contact = () => {
 
           <div class="second" data-aos="fade-left">
 
-            <form action="" className="php-email-form">
+            <form className="php-email-form" ref={form} onSubmit={sendEmail}>
               <div className="row-two">
                 <div className="form-group">
                   <input type="text" name='firstname' className="form-control" placeholder="Your FirstName" required/>
