@@ -105,6 +105,7 @@ const Wrapper = styled.section`
 .card {
   width: 100%;
   box-shadow: var(--serviceshadow);
+  border: 1px solid var(--border);
 }
 .info{
   padding: 20px;
