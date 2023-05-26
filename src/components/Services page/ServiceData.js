@@ -1,7 +1,6 @@
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { TiCss3 } from 'react-icons/ti';
 import { GrReactjs } from 'react-icons/gr';
-import { TiBrandMongodb } from 'react-icons/ti';
 import { TbBrandReact } from 'react-icons/tb'
 import { FaNodeJs } from 'react-icons/fa';
 import { SiMongodb, SiRedux } from 'react-icons/si';
@@ -40,7 +39,7 @@ const ServiceData = [
         { name: "React Native", icon: <TbBrandReact /> },
         { name: "Node Js", icon: <FaNodeJs /> },
         { name: "Mongo DB", icon: <SiMongodb /> },
-        { name: "Mongoose", icon: <TiBrandMongodb /> },
+        { name: "Mongoose", icon: <SiMongodb /> },
         { name: "Socket.IO", icon: <GrReactjs /> },
         { name: "Redux", icon: <SiRedux /> },
       ],
