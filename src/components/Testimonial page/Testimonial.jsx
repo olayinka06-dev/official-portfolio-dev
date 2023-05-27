@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import Swiper from 'swiper';
+import 'swiper/css/swiper.css';
+
 
 const Testimonial = () => {
     useEffect(() => {
