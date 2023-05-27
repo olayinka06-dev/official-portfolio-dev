@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Resume = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
   return (
     <Wrapper>
         <section id="resume" class="resume">
@@ -13,7 +18,7 @@ const Resume = () => {
             </div>
 
             <div class="row">
-            <div class="first">
+            <div class="first" data-aos="fade-right">
                 <h3 class="resume-title">Sumary</h3>
                 <div class="resume-item pb-0">
                 <h4>Olayinka Dev</h4>
@@ -39,7 +44,7 @@ const Resume = () => {
                 <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
                 </div>
             </div>
-            <div class="second">
+            <div class="second" data-aos="fade-left">
                 <h3 class="resume-title">Professional Experience</h3>
                 <div class="resume-item">
                 <h4>Senior graphic design specialist</h4>
@@ -84,7 +89,7 @@ const Wrapper = styled.section`
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: var(--text);
 }
 
 .resume .resume-item {
@@ -144,7 +149,6 @@ p, h3, ul, li{
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
   border: 2px solid var(--herocolor);
 }
 

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import { BiLink, BiPlus } from 'react-icons/bi';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const images = [
   {
@@ -43,16 +45,19 @@ const images = [
 
 const GroupPortfolio = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
     <Wrapper>
       <section id="portfolio" className="portfolio section-bg">
         <div className="container">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-up">
             <h2>Portfolio</h2>
             <p>Welcome to my portfolio, where I present a collection of my work, ranging from web development projects to applications and blog designs. My focus is on delivering top-notch outcomes that cater to the requirements of both clients and users. Take a closer look at the various categories below to explore diverse examples showcasing my skill set. If you have any inquiries or would like to collaborate, please don't hesitate to contact me. Thank you for taking the time to visit!</p>
           </div>
-          <div className="top">
+          <div className="top" data-aos="fade-up">
           <ul id="portfolio-flters">
             <li onClick={() => setSelectedFilter('All')} className={selectedFilter === 'All' ? 'active' : ''}>All</li>
             <li onClick={() => setSelectedFilter('Website')} className={selectedFilter === 'Website' ? 'active' : ''}>Website</li>
@@ -60,7 +65,7 @@ const GroupPortfolio = () => {
             <li onClick={() => setSelectedFilter('Blog')} className={selectedFilter === 'Blog' ? 'active' : ''}>Blog</li>
           </ul>
           </div>
-          <div className="row portfolio-container" >
+          <div className="row portfolio-container" data-aos="fade-up">
             {images.filter(image => selectedFilter === 'All' || image.category === selectedFilter)
               .map((image, index) => (
                 <div className="portfolio-item" key={index}>

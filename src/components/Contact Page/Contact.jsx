@@ -8,6 +8,7 @@ import 'aos/dist/aos.css'
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -21,8 +22,11 @@ const Contact = () => {
       .then((result) => {
           console.log(result.text);
           setSuccess(true)
+          setError(false)
       }, (error) => {
           console.log(error.text);
+          setError(true)
+          setSuccess(false)
       });
   };
 
@@ -80,7 +84,7 @@ const Contact = () => {
               </div>
               <div classname="">
                 <div className="loading">Loading</div>
-                <div className="error-message"></div>
+                <div className={`${error ? "not-error" : "error-message"}`}></div>
                 <div className={`${success ? "not-success" : "sent-message"}`}>Your message has been sent. Thank you!</div>
               </div>
               <div className="btn-group"><button type="submit">Send Message</button></div>
@@ -199,20 +203,23 @@ input, textarea{
 }
 
 .contact form .error-message {
-  display: none;
   color: #fff;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
   font-weight: 600;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
 }
-
+.not-error{
+  height: 5vh;
+}
 .contact form .error-message br+br {
   margin-top: 25px;
 }
 
 .contact form .sent-message {
-  display: none;
   color: #fff;
   background: #18d26e;
   text-align: center;
