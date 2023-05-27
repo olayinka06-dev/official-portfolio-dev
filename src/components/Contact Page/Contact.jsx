@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import { BiEnvelope } from 'react-icons/bi';
 import { MdCall, MdLocationPin } from 'react-icons/md';
@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 const Contact = () => {
+  const [success, setSuccess] = useState(false);
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -19,6 +20,7 @@ const Contact = () => {
     emailjs.sendForm('service_crx3kho', 'template_09ehw19', form.current, 'u2nfu0FS3Hq8iz7Hh')
       .then((result) => {
           console.log(result.text);
+          setSuccess(true)
       }, (error) => {
           console.log(error.text);
       });
@@ -79,7 +81,7 @@ const Contact = () => {
               <div classname="">
                 <div className="loading">Loading</div>
                 <div className="error-message"></div>
-                <div className="sent-message">Your message has been sent. Thank you!</div>
+                <div className={`${success ? "not-success" : "sent-message"}`}>Your message has been sent. Thank you!</div>
               </div>
               <div className="btn-group"><button type="submit">Send Message</button></div>
             </form>
@@ -215,8 +217,13 @@ input, textarea{
   text-align: center;
   padding: 15px;
   font-weight: 600;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
 }
-
+.not-success{
+  height: 5vh;
+}
 .contact form .loading {
   display: none;
   background: #fff;

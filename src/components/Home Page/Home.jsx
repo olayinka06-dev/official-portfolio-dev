@@ -11,6 +11,8 @@ import Portfolio from '../Portfolio Page/Portfolio';
 import styled from 'styled-components';
 import Footer from '../Footer Page/Footer';
 import Services from '../Services page/Services';
+import Testimonial from '../Testimonial page/Testimonial';
+import Resume from '../Resume Page/Resume';
 
 
 
@@ -35,8 +37,10 @@ const Home2 = () => {
           <main>
             <Hero/>
             <About/>
+            <Resume/>
             <Portfolio/>
             <Services/>
+            <Testimonial/>
             <Contact/>
             <BackToTop/>
           </main>
