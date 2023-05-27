@@ -13,7 +13,7 @@ const Testimonial = () => {
               delay: 5000,
               disableOnInteraction: false
             },
-            slidesPerView: 3,
+            slidesPerView: 1,
             pagination: {
               el: '.swiper-pagination',
               type: 'bullets',
@@ -24,7 +24,7 @@ const Testimonial = () => {
                   slidesPerView: 2
                 },
                 768: {
-                  slidesPerView: 1
+                  slidesPerView: 3
                 }
               }
           });

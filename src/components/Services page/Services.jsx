@@ -98,6 +98,7 @@ const Wrapper = styled.section`
 .row {
   width: 100%;
   display: flex;
+  flex-direction: row;
   gap: 80px;
   padding: 20px 60px;
   
@@ -185,6 +186,12 @@ ul li svg{
 .cards:focus-within {
     outline: #68becd dashed 3px;
     outline-offset: 3px;
+}
+
+@media screen and (max-width: 992px) {
+  .row{
+    flex-direction: column;
+  }
 }
 
 

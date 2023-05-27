@@ -90,25 +90,28 @@ const Wrapper = styled.section`
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid var(--herospan);
   position: relative;
 }
 .row{
     width: 100%;
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 .first, .second{
     width: 100%;
 }
-
+p, h3, ul, li{
+    color: var(--text);
+}
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: var(--herocolor);
   margin-bottom: 10px;
 }
 
@@ -142,7 +145,7 @@ const Wrapper = styled.section`
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0563bb;
+  border: 2px solid var(--herocolor);
 }
 
 @media screen and (max-width: 992px) {

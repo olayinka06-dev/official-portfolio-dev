@@ -141,6 +141,7 @@ input, textarea{
   border: 1px solid var(--inputborder);
   outline-color: var(--herocolor);
   background-color: var(--navlinkbackground);
+  color: var(--text);
 }
 .contact .info {
   width: 100%;
