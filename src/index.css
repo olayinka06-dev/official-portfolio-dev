@@ -28,6 +28,7 @@ p, li{
   --inputborder: rgb(206,212,218);
   --border: hsl(136, 65%, 51%);
   --serviceshadow: 0px 5px 10px #d4d4d4, 0px 2px 2px #d4d4d4, 0px 2px 2px #d4d4d4, 0px 2px 2px #d4d4d4;
+  --para: black;
 }
 
 .light-mode{
@@ -47,6 +48,7 @@ p, li{
   --inputborder: rgb(206,212,218);
   --border: hsl(136, 65%, 51%);
   --serviceshadow: 0px 5px 10px #d4d4d4, 0px 2px 2px #d4d4d4, 0px 2px 2px #d4d4d4, 0px 2px 2px #d4d4d4;
+  --para: black;
 }
 .dark-mode{
   --letter:rgb(219, 219, 219);
@@ -65,6 +67,7 @@ p, li{
   --inputborder: black;
   --border: hsl(192, 70%, 51%);
   --serviceshadow: 0px 5px 10px black, 0px 2px 2px black, 0px 2px 2px black, 0px 2px 2px black;
+  --para: white;
 }
 
 /* .dark-mode{

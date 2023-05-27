@@ -147,12 +147,12 @@ const Wrapper = styled.section`
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: var(--para);
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: var(--text);
   margin: 0 0 15px 0;
 }
 
@@ -178,6 +178,7 @@ const Wrapper = styled.section`
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  color: var(--para);
 }
 
 .testimonials .swiper-pagination {

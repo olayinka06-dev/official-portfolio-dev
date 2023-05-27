@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { BiLink, BiPlus } from 'react-icons/bi';
 import AOS from 'aos';
