@@ -34,7 +34,7 @@ const Footer = () => {
     </Wrapper>
   )
 }
-const Wrapper = styled.div`
+const Wrapper = styled.section`
 
 .footer {
   background: #f7f8f9;
@@ -42,8 +42,8 @@ const Wrapper = styled.div`
   font-size: 14px;
   text-align: center;
   width: 100%;
-  margin-top: 30px;
-  /* padding-top: 40px; */
+  padding-top: 40px;
+  padding-right: 10px;
   padding-bottom: 20px;
   background-color: var(--sectionbackground);
 }

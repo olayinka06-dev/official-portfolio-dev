@@ -13,7 +13,7 @@ const Resume = () => {
             </div>
 
             <div class="row">
-            <div class="col-lg-6">
+            <div class="first">
                 <h3 class="resume-title">Sumary</h3>
                 <div class="resume-item pb-0">
                 <h4>Olayinka Dev</h4>
@@ -39,7 +39,7 @@ const Resume = () => {
                 <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="second">
                 <h3 class="resume-title">Professional Experience</h3>
                 <div class="resume-item">
                 <h4>Senior graphic design specialist</h4>
@@ -93,6 +93,14 @@ const Wrapper = styled.section`
   border-left: 2px solid #0563bb;
   position: relative;
 }
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.first, .second{
+    width: 100%;
+}
 
 .resume .resume-item h4 {
   line-height: 18px;
@@ -135,6 +143,12 @@ const Wrapper = styled.section`
   top: 0;
   background: #fff;
   border: 2px solid #0563bb;
+}
+
+@media screen and (max-width: 992px) {
+    .row{
+        flex-direction: column;
+    }
 }
 
 `
