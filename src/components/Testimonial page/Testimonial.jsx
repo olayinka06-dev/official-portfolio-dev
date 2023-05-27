@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Swiper from 'swiper';
 
 
 const Testimonial = () => {
-    useEffect(() => {
-        new Swiper('.testimonials-slider', {
+              new Swiper('.testimonials-slider', {
             speed: 600,
             loop: true,
             autoplay: {
@@ -19,7 +18,6 @@ const Testimonial = () => {
               clickable: true
             }
         });
-      }, []);
   return (
     <Wrapper>
             <section id="testimonials" class="testimonials section-bg">
