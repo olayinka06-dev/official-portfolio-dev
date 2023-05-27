@@ -28,7 +28,7 @@ const Hero = () => {
           return "";
         }
       });
-    }, 100);
+    }, 500);
     return () => clearInterval(intervalId);
   }, [currentTextIndex, texts]);
 
