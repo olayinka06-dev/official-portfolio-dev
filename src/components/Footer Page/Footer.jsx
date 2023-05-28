@@ -16,7 +16,7 @@ const Footer = () => {
         <section id="footer" className='footer' data-aos="fade-up">
             <div class="container">
               <h3>Olayinka_Dev</h3>
-              <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+              <p>Welcome to my portfolio! I'm a passionate web developer specializing in front-end and back-end development. I create exceptional digital experiences with a focus on responsive design. Connect with me on social media and let's collaborate!</p>              
               <div class="social-links">
                 <a href={'/'}><i><AiOutlineTwitter/></i></a>
                 <a href={'/'}><i><RiFacebookFill/></i></a>
@@ -27,7 +27,7 @@ const Footer = () => {
                 &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
               </div>
               <div class="credits">
-                Designed by <a style={{color: "blue", textDecoration: "none"}} href="https://bootstrapmade.com/">Olayinka_Dev</a>
+                Designed by <a style={{color: "blue", textDecoration: "none"}} href={"/"}>Olayinka_Dev</a>
               </div>
             </div>
         </section>
