@@ -7,8 +7,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 const Contact = () => {
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -17,16 +18,18 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true)
     emailjs.sendForm('service_crx3kho', 'template_09ehw19', form.current, 'u2nfu0FS3Hq8iz7Hh')
       .then((result) => {
           console.log(result.text);
-          setSuccess(true)
-          setError(false)
+          setSuccess("Your message has been sent. Thank you!")
+          setError("")
+          setLoading(false)
       }, (error) => {
           console.log(error.text);
-          setError(true)
-          setSuccess(false)
+          setError("");
+          setSuccess("Network Error Message Not Sent!");
+          setLoading(false)
       });
   };
 
@@ -83,9 +86,14 @@ const Contact = () => {
                 <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div classname="">
-                <div className="loading">Loading</div>
-                <div className={`${error ? "not-error" : "error-message"}`}></div>
-                <div className={`${success ? "not-success" : "sent-message"}`}>Your message has been sent. Thank you!</div>
+                {
+                  loading ? (<div className="loading">Loading</div>) : (                
+                    <>
+                      {error && (<div className="error-message"></div>)}
+                      {success && (<div className="sent-message"></div>)}
+                    </>
+                  )
+                }
               </div>
               <div className="btn-group"><button type="submit">Send Message</button></div>
             </form>
