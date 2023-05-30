@@ -52,7 +52,7 @@ const Hero = () => {
             <Link to={'/'}><FaLinkedinIn/></Link>
           </div>
           <div className='btn-group'>
-            <Link to={'../my cv/index.html'} className='cv'>My CV</Link>
+            <Link to={'/my-cv'} className='cv'>My CV</Link>
             <Link className='hire'>Hire Me</Link>
           </div>
         </div>
@@ -175,6 +175,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    margin-top: 30px;
   }
 
 
@@ -202,6 +203,10 @@ const Wrapper = styled.div`
       margin-top: 10px;
       font-size: 20px;
       line-height: 24px;
+    }
+    .btn-group{
+      align-items: center;
+      justify-content: center;
     }
     @keyframes slide-fade-in-one {
     from {

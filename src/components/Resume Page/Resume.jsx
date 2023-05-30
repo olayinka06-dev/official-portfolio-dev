@@ -154,6 +154,9 @@ p, h3, ul, li{
 }
 
 @media screen and (max-width: 992px) {
+  .resume{
+    padding: 30px 10px;
+  }
     .row{
         flex-direction: column;
     }

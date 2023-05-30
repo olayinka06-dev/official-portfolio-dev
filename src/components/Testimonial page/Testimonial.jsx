@@ -2,11 +2,13 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Swiper from 'swiper';
 import 'swiper/swiper.min.css';
+// import 'swiper/swiper-bundle.min.css';
+// import 'swiper/swiper-bundle.min.js';
 
 
 const Testimonial = () => {
     useEffect(() => {
-        new Swiper('.testimonials-slider', {
+        new Swiper('.swiper-container', {
             speed: 600,
             loop: true,
             autoplay: {
@@ -108,6 +110,8 @@ const Testimonial = () => {
 
           </div>
           <div className="swiper-pagination"></div>
+          <div className="swiper-button-next"></div>
+          <div className="swiper-button-prev"></div>
         </div>
 
       </div>
@@ -199,6 +203,9 @@ const Wrapper = styled.section`
 }
 
 @media (min-width: 992px) {
+  .testimonials{
+    padding: 30px 10px;
+  }
   .testimonials .testimonial-item p {
     width: 80%;
   }

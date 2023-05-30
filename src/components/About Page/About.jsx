@@ -170,7 +170,7 @@ const Wrapper = styled.section`
   gap: 20px;
 }
 .img-fluid{
-  width: 356px;
+  width: 376px;
 }
 .about-left{
   width: 100%;

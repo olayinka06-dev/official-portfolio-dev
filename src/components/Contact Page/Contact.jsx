@@ -4,7 +4,8 @@ import { BiEnvelope } from 'react-icons/bi';
 import { MdCall, MdLocationPin } from 'react-icons/md';
 import styled from 'styled-components';
 import AOS from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
+import '../../index.css'
 
 const Contact = () => {
   const [success, setSuccess] = useState("");
@@ -27,8 +28,8 @@ const Contact = () => {
           setLoading(false)
       }, (error) => {
           console.log(error.text);
-          setError("");
-          setSuccess("Network Error Message Not Sent!");
+          setSuccess("");
+          setError("Network Error Message Not Sent!");
           setLoading(false)
       });
   };
@@ -87,15 +88,15 @@ const Contact = () => {
               </div>
               <div classname="">
                 {
-                  loading ? (<div className="loading">Loading</div>) : (                
+                   loading ? (<div className="loading">Loading</div>) : (                
                     <>
-                      {error && (<div className="error-message"></div>)}
-                      {success && (<div className="sent-message"></div>)}
+                      {error && (<div className="error-message">{error}</div>)}
+                      {success && (<div className="sent-message">{success}</div>)}
                     </>
                   )
                 }
               </div>
-              <div className="btn-group"><button type="submit">Send Message</button></div>
+              <div className="btn-group"><button className='cv' type="submit">Send Message</button></div>
             </form>
 
           </div>
@@ -210,34 +211,29 @@ input, textarea{
   padding-bottom: 8px;
 }
 
-.contact form .error-message {
+.error-message {
   color: #fff;
   background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
-  height: 0;
   overflow: hidden;
   transition: all 1s ease;
-}
-.not-error{
+  width: 100%;
   height: 5vh;
 }
-.contact form .error-message br+br {
-  margin-top: 25px;
-}
 
-.contact form .sent-message {
+.sent-message {
   color: #fff;
   background: #18d26e;
-  text-align: center;
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
-  height: 0;
   overflow: hidden;
   transition: all 1s ease;
-}
-.not-success{
+  width: 100%;
   height: 5vh;
 }
 .contact form .loading {

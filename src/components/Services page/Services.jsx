@@ -189,6 +189,9 @@ ul li svg{
 }
 
 @media screen and (max-width: 992px) {
+  .services{
+    padding: 30px 10px;
+  }
   .row{
     flex-direction: column;
   }

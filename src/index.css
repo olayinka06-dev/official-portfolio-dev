@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,a{
   font-family: "Raleway", sans-serif;
 }
 p, li{
@@ -55,11 +55,14 @@ p, li{
   --navigationbody: black;
   --mainbody: black;
   --herobackground: rgba(5, 13, 24, 0.3);
-  --activehover: #5983FC;
+  /* --activehover: #5938FC; */
+  --activehover: blue;
   --navlinkbackground: rgb(32,33,35);
   --navlinkcolor: white;
-  --herocolor: #5983FC;
-  --herospan: #5983FC;
+  /* --herocolor: #5938FC; */
+  --herocolor: blue;
+  --herospan: blue;
+  /* --herospan: #5938FC; */
   --text: white;
   --social: #45505b;
   --sectionbackground: black;
@@ -107,16 +110,22 @@ p, li{
 .cv{
   text-decoration: none;
   padding: 12px 25px;
-  background-color: var(--activehover);
+  background: var(--activehover);
   border-radius: 20px;
   color: white;
-}
-.cv:hover{
-  background-color: transparent;
   border-left: 1px solid var(--herocolor);
   border-top: 1px solid var(--herocolor);
   border-bottom: 1px solid  var(--herospan);
   border-right: 1px solid  var(--herospan);
+  transition: all .5s ease;
+}
+.cv:hover{
+  background: transparent;
+  border-left: 1px solid var(--herocolor);
+  border-top: 1px solid var(--herocolor);
+  border-bottom: 1px solid  var(--herospan);
+  border-right: 1px solid  var(--herospan);
+  color: var(--text);
 }
 .hire{
   text-decoration: none;
@@ -127,10 +136,12 @@ p, li{
   border-bottom: 1px solid  var(--herospan);
   border-right: 1px solid  var(--herospan);
   border-radius: 20px;
-  color: white;
+  color: var(--text);
+  transition: all 1s ease;
 }
 .hire:hover{
-  background-color: var(--activehover);
+  background: var(--activehover);
+  color: white;
 }
 section {
   overflow: hidden;
