@@ -52,7 +52,7 @@ const Hero = () => {
             <Link to={'/'}><FaLinkedinIn/></Link>
           </div>
           <div className='btn-group'>
-            <Link className='cv'>My CV</Link>
+            <Link to={'../my cv/index.html'} className='cv'>My CV</Link>
             <Link className='hire'>Hire Me</Link>
           </div>
         </div>
