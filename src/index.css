@@ -104,7 +104,34 @@ p, li{
   --hover: hsl(136, 65%, 51%);
 
 } */
-
+.cv{
+  text-decoration: none;
+  padding: 12px 25px;
+  background-color: var(--activehover);
+  border-radius: 20px;
+  color: white;
+}
+.cv:hover{
+  background-color: transparent;
+  border-left: 1px solid var(--herocolor);
+  border-top: 1px solid var(--herocolor);
+  border-bottom: 1px solid  var(--herospan);
+  border-right: 1px solid  var(--herospan);
+}
+.hire{
+  text-decoration: none;
+  padding: 12px 25px;
+  background-color: transparent;
+  border-left: 1px solid var(--herocolor);
+  border-top: 1px solid var(--herocolor);
+  border-bottom: 1px solid  var(--herospan);
+  border-right: 1px solid  var(--herospan);
+  border-radius: 20px;
+  color: white;
+}
+.hire:hover{
+  background-color: var(--activehover);
+}
 section {
   overflow: hidden;
 }

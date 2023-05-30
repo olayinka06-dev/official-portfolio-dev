@@ -51,6 +51,10 @@ const Hero = () => {
             <Link to={'/'}><IoLogoInstagram/></Link>
             <Link to={'/'}><FaLinkedinIn/></Link>
           </div>
+          <div className='btn-group'>
+            <Link className='cv'>My CV</Link>
+            <Link className='hire'>Hire Me</Link>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -164,6 +168,13 @@ const Wrapper = styled.div`
   .social-links a:hover {
     color: white;
     background: var(--activehover);
+  }
+  .btn-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
   }
 
 
