@@ -20,7 +20,7 @@ const Services = () => {
 
           <div className="section-title">
             <h2>Services</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>Explore a wide range of services I offer, meticulously customized to address your unique requirements. I specialize in delivering expert solutions that empower your success in the dynamic realm of digital innovation.</p>
           </div>
 
           <div className="row">

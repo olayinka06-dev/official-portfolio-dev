@@ -174,10 +174,9 @@ const Wrapper = styled.section`
     animation: scale 9s linear infinite;
   }
 @keyframes scale {
-  0%{transform: scaleX(110%);}
-  50%{transform: scaleX(100%);}
-  100%{transform: scaleX(110%);}
-}
+  0%{transform: scaleX(115%) scaleY(115%);}
+  50%{transform: scaleX(100%) scaleY(100%);}
+  100%{transform: scaleX(115%) scaleY(115%);}}
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.7);
