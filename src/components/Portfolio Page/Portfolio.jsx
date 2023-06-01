@@ -115,6 +115,7 @@ const Wrapper = styled.section`
   justify-content: center;
 } 
 .portfolio .portfolio-container {
+  width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Add the desired gap value */
@@ -122,8 +123,9 @@ const Wrapper = styled.section`
 .portfolio .portfolio-item {
   margin-bottom: 30px;
   border: 1px solid var(--herocolor);
+  width: 100%;
 }
-.portfolio-item {
+/* .portfolio-item {
   width: calc(100% / 3);
   padding: 6px;
   box-sizing: border-box;
@@ -132,7 +134,7 @@ const Wrapper = styled.section`
   transition: all 3s ease;
   margin: 0 5px !important;
   border-radius: 10px;
-}
+} */
 
 .portfolio #portfolio-flters {
   padding: 0;
