@@ -88,11 +88,10 @@ const GroupPortfolio = () => {
                         <a href={"/portfolio-details"} className="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"><BiLink/></i></a>
                       </div>
                     </div>
-                    <div className="btn-group">
-                      <Link to={image.link} className='hire'>View Live Demo</Link>
-                    </div>
                   </div>
-                  
+                  <div className="btn-group">
+                    <Link to={image.link} className='hire'>View Live Demo</Link>
+                  </div>
                 </div>
                 
               ))}
