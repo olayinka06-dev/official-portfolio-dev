@@ -119,21 +119,14 @@ const Wrapper = styled.section`
   border: 1px solid var(--herocolor);
 }
 .portfolio-item {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 10px;
-  padding: 10px;
-  transition: all 3s ease;
-  /* width: calc(100% / 3);
-  padding: 10px;
+  width: calc(100% / 3);
+  padding: 6px;
   box-sizing: border-box;
   display: inline-block; 
   vertical-align: top; 
   transition: all 3s ease;
-  margin: 0 10px !important;
-  gap: 10px !important;
-  border-radius: 10px; */
+  margin: 0 5px !important;
+  border-radius: 10px;
 }
 
 .portfolio #portfolio-flters {
