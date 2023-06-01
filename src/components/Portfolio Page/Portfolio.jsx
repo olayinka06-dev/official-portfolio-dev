@@ -116,7 +116,7 @@ const Wrapper = styled.section`
 } 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-  border: 1px solid var(--herospan);
+  border: 1px solid var(--herocolor);
 }
 .portfolio-item {
   width: calc(100% / 3);
@@ -125,6 +125,9 @@ const Wrapper = styled.section`
   display: inline-block; 
   vertical-align: top; 
   transition: all 3s ease;
+  /* margin: 0 10px; */
+  gap: 10px;
+  border-radius: 10px;
 }
 
 .portfolio #portfolio-flters {
