@@ -173,6 +173,8 @@ const Wrapper = styled.section`
   justify-content: center;
   padding: 0 20px;
   width: 100%;
+  margin-top: 50px;
+  z-index: 9999;
 }
 .btn-group a{
   width: 100%;
