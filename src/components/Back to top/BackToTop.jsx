@@ -44,7 +44,6 @@ const Wrapper = styled.div`
     bottom: 3%;
     left: 90%;
     padding: 5px 15px;
-    background-color:  var(--activehover);
     color: white;
     border-radius: 50%;
     visibility: hidden;
@@ -64,6 +63,7 @@ const Wrapper = styled.div`
   }
   svg{
     margin-top: 5px;
+    background-color:  var(--activehover);
   }
 
   .back-to-top.active{

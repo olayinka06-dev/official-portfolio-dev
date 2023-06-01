@@ -117,6 +117,7 @@ const Wrapper = styled.section`
 } 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  border: 1px solid var(--herospan);
 }
 .portfolio-item {
   width: calc(100% / 3);
@@ -164,7 +165,6 @@ const Wrapper = styled.section`
   overflow: hidden;
   z-index: 1;
   transition: all 3s ease;
-  border: 1px solid var(--herospan);
 
 }
 .btn-group{
