@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import {FaArrowCircleUp} from 'react-icons/fa';
+import {BsArrowUp} from 'react-icons/bs';
 
 const BackToTop = () => {
 
@@ -26,7 +26,7 @@ const BackToTop = () => {
 
   return (
     <Wrapper>
-        <button onClick={scrollToTop} className={`${visible ? "back-to-top active" : "back-to-top"}`}><FaArrowCircleUp /></button>
+        <button onClick={scrollToTop} className={`${visible ? "back-to-top active" : "back-to-top"}`}><BsArrowUp /></button>
     </Wrapper>
 
   )
@@ -44,7 +44,8 @@ const Wrapper = styled.div`
     bottom: 3%;
     left: 90%;
     padding: 5px 15px;
-    background-color:  #0563bb;
+    background-color:  var(--activehover);
+    color: white;
     border-radius: 50%;
     visibility: hidden;
     opacity: 0;

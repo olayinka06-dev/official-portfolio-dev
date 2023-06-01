@@ -22,7 +22,7 @@ const Resume = () => {
                 <h3 class="resume-title">Sumary</h3>
                 <div class="resume-item pb-0">
                 <h4>Olayinka Dev</h4>
-                <p><em>Highly skilled and motivated frontend, backend and full-stack developer with 2 year of experience in building responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript, and modern frontend frameworks. Strong problem-solving abilities and a passion for creating engaging user experiences.</em></p>
+                <p><em>Highly skilled and motivated full stack developer with expertise in frontend and backend development. Experienced in building responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript Node js, and modern frontend frameworks. Strong problem-solving abilities and a passion for creating engaging user experiences</em></p>
                 <ul>
                     <li>Portland par 127,Orlando, FL</li>
                     <li>Phone: +234 9038464244</li>
