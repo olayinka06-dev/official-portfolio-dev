@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import {BsArrowUp} from 'react-icons/bs';
+import '../../index.css';
 
 const BackToTop = () => {
 
