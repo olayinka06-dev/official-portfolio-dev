@@ -114,6 +114,11 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
 } 
+.portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Add the desired gap value */
+  }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
   border: 1px solid var(--herocolor);
@@ -308,6 +313,11 @@ const Wrapper = styled.section`
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
+}
+@media screen and (max-width: 992px) {
+  .portfolio .portfolio-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 `
