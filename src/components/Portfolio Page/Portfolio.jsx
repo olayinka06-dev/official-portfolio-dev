@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { BiLink, BiPlus } from 'react-icons/bi';
+import {Link} from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -9,37 +10,43 @@ const images = [
     src: './img/portfolio/portfolio-1.jpg',
     alt: 'Screenshot of App 1',
     category: 'App',
-    title: 'App 1'
+    title: 'App 1',
+    link: 'https://olayinka-dev-portfolio.netlify.app'
   },
   {
     src: './img/portfolio/portfolio-2.jpg',
     alt: 'Screenshot of Website 1',
     category: 'Website',
-    title: 'Website 1'
+    title: 'Website 1',
+    link: 'https://olayinka-dev-portfolio.netlify.app'
   },
   {
     src: './img/portfolio/portfolio-3.jpg',
     alt: 'Screenshot of Blog 1',
     category: 'Blog',
-    title: 'Blog 1'
+    title: 'Blog 1',
+    link: 'https://olayinka-dev-portfolio.netlify.app'
   },
   {
     src: './img/portfolio/portfolio-4.jpg',
     alt: 'Screenshot of App 2',
     category: 'App',
-    title: 'App 2'
+    title: 'App 2',
+    link: 'https://olayinka-dev-portfolio.netlify.app'
   },
   {
     src: './img/portfolio/portfolio-5.jpg',
     alt: 'Screenshot of Website 2',
     category: 'Website',
-    title: 'Website 2'
+    title: 'Website 2',
+    link: 'https://olayinka-dev-portfolio.netlify.app'
   },
   {
     src: './img/portfolio/portfolio-6.jpg',
     alt: 'Screenshot of Blog 2',
     category: 'Blog',
-    tile: 'Blog 2'
+    tile: 'Blog 2',
+    link: 'https://olayinka-dev-portfolio.netlify.app'
   }
 ];
 
@@ -80,6 +87,9 @@ const GroupPortfolio = () => {
                         <a href={image.src} data-gallery="portfolioGallery" className="portfolio-lightbox" title={image.title}><i><BiPlus/></i></a>
                         <a href={"/portfolio-details"} className="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"><BiLink/></i></a>
                       </div>
+                    </div>
+                    <div className="btn-group">
+                      <Link to={image.link} className='hire'>View Live Demo</Link>
                     </div>
                   </div>
                   
@@ -155,7 +165,18 @@ const Wrapper = styled.section`
   overflow: hidden;
   z-index: 1;
   transition: all 3s ease;
+  border: 1px solid var(--herospan);
 
+}
+.btn-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  width: 100%;
+}
+.btn-group a{
+  width: 100%;
 }
 .image-container {
     width: 100%;
