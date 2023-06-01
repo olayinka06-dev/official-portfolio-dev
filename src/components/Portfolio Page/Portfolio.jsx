@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { BiLink, BiPlus } from 'react-icons/bi';
-import {Link} from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -90,7 +89,7 @@ const GroupPortfolio = () => {
                     </div>
                   </div>
                   <div className="btn-group">
-                    <Link to={image.link} className='hire'>View Live Demo</Link>
+                    <a href={image.link} className='hire'>View Live Demo</a>
                   </div>
                 </div>
                 
