@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Swiper from 'swiper';
 import 'swiper/swiper.min.css';
-// import 'swiper/swiper-bundle.min.css';
-// import 'swiper/swiper-bundle.min.js';
 
 
 const Testimonial = () => {
@@ -50,7 +48,7 @@ const Testimonial = () => {
                 <h4>Ceo &amp; Founder</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Working with Olayinka has been an incredible experience. Their expertise in both frontend and backend development helped us build a robust and user-friendly web application. Their attention to detail and problem-solving abilities are commendable.
+                  Working with Olayinka has been an incredible experience. His expertise in both frontend and backend development helped us build a robust and user-friendly web application. His attention to detail and problem-solving abilities are commendable.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -63,7 +61,7 @@ const Testimonial = () => {
                 <h4>Designer</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Olayinka's frontend development skills are exceptional. They have an eye for design and always ensure that the user experience is top-notch. Their dedication and commitment to delivering high-quality work make them a valuable asset to any project.
+                  Olayinka's frontend development skills is exceptional. He has an eye for design and always ensure that the user experience is top-notch. His dedication and commitment to delivering high-quality work make them a valuable asset to any project.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -76,7 +74,7 @@ const Testimonial = () => {
                 <h4>Store Owner</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I had the pleasure of collaborating with Olayinka on a complex web development project. Their full stack expertise was evident throughout the process. They seamlessly integrated frontend and backend components, resulting in a highly functional and efficient application.
+                  I had the pleasure of collaborating with Olayinka on a complex web development project. His full stack expertise was evident throughout the process. He seamlessly integrated frontend and backend components, resulting in a highly functional and efficient application.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -89,7 +87,7 @@ const Testimonial = () => {
                 <h4>Freelancer</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Olayinka's technical skills and ability to solve problems are impressive. They have a deep understanding of modern frontend frameworks like React and backend technologies like Node.js. Their contributions significantly improved the overall performance and functionality of our web application.
+                  Olayinka's technical skills and ability to solve problems are impressive. He has a deep understanding of modern frontend frameworks like React and backend technologies like Node.js. His contributions significantly improved the overall performance and functionality of our web application.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -102,7 +100,7 @@ const Testimonial = () => {
                 <h4>Entrepreneur</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I highly recommend Olayinka for any web development project. Their professionalism, clear communication, and commitment to meeting deadlines are remarkable. They consistently delivered high-quality code and exceeded our expectations.
+                  I highly recommend Olayinka for any web development project. His professionalism, clear communication, and commitment to meeting deadlines are remarkable.He consistently delivered high-quality code and exceeded our expectations.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
