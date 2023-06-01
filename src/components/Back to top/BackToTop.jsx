@@ -26,7 +26,7 @@ const BackToTop = () => {
 
   return (
     <Wrapper>
-        <button onClick={scrollToTop} className={`${visible ? "back-to-top active" : "back-to-top"}`}><BsArrowUp /></button>
+       <BsArrowUp onClick={scrollToTop} className={`${visible ? "back-to-top active" : "back-to-top"}`} />
     </Wrapper>
 
   )
@@ -55,6 +55,8 @@ const Wrapper = styled.div`
     cursor: pointer;
     animation: animater 2s linear infinite;
     z-index: 1000;
+    margin-top: 5px;
+    background-color:  var(--activehover);
   }
   @keyframes animater {
     0%{transform: translateY(10px);}
@@ -62,8 +64,7 @@ const Wrapper = styled.div`
     100%{transform: translateY(10px);}
   }
   svg{
-    margin-top: 5px;
-    background-color:  var(--activehover);
+
   }
 
   .back-to-top.active{

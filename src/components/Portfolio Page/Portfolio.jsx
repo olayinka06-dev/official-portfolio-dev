@@ -125,8 +125,8 @@ const Wrapper = styled.section`
   display: inline-block; 
   vertical-align: top; 
   transition: all 3s ease;
-  /* margin: 0 10px; */
-  gap: 10px;
+  margin: 0 10px !important;
+  gap: 10px !important;
   border-radius: 10px;
 }
 
@@ -148,7 +148,7 @@ const Wrapper = styled.section`
   line-height: 1;
   text-transform: uppercase;
   color: var(--text);
-  /* color: var(--herocolor); */
+  color: var(--herocolor);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
