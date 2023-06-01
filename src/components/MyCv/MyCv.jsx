@@ -42,6 +42,26 @@ const MyCv = () => {
                         <li>Conducted code reviews and implemented best practices for code quality and maintainability.</li>
                     </ul>
                 </article>
+                <article>
+                    <h3>Full Stack Developer | Toshconsultinc Technologies | Mar 2021 - Present</h3>
+                    <ul>
+                        <li>Collaborated with cross-functional teams to build and maintain responsive web applications using React on the frontend and Node.js on the backend.</li>
+                        <li>Implemented responsive designs using HTML, CSS, and JavaScript, ensuring optimal user experience across different devices.</li>
+                        <li>Optimized website performance and ensured cross-browser compatibility.</li>
+                        <li>Integrated APIs and third-party libraries to enhance functionality and improve user experience.</li>
+                        <li>Conducted code reviews and implemented best practices for code quality, maintainability, and scalability.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Backend Developer | Toshconsultinc Technologies | Mar 2021 - Present</h3>
+                    <ul>
+                        <li>Developed and maintained backend systems using Node.js, Express, and MongoDB.</li>
+                        <li>Designed and implemented RESTful APIs for seamless communication between frontend and backend.</li>
+                        <li>Managed databases and performed efficient data querying and manipulation.</li>
+                        <li>Implemented security measures and authentication mechanisms for user data protection.</li>
+                        <li>Collaborated with frontend developers to ensure smooth integration of frontend and backend components.</li>
+                    </ul>
+                </article>
                 </section>
             
                 <section>

@@ -47,26 +47,28 @@ const Resume = () => {
             <div class="second" data-aos="fade-left">
                 <h3 class="resume-title">Professional Experience</h3>
                 <div class="resume-item">
-                <h4>Senior graphic design specialist</h4>
-                <h5>2019 - Present</h5>
-                <p><em>Experion, New York, NY </em></p>
-                <ul>
-                    <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                    <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                    <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                    <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-                </ul>
+                  <h4>Full Stack Developer</h4>
+                  <h5>Mar 2021 - 2022</h5>
+                  <p><em>Toshconsultinc Technologies</em></p>
+                  <ul>
+                    <li>Collaborated with cross-functional teams to build and maintain responsive web applications using React on the frontend and Node.js on the backend.</li>
+                    <li>Implemented responsive designs using HTML, CSS, and JavaScript, ensuring optimal user experience across different devices.</li>
+                    <li>Optimized website performance and ensured cross-browser compatibility.</li>
+                    <li>Integrated APIs and third-party libraries to enhance functionality and improve user experience.</li>
+                    <li>Conducted code reviews and implemented best practices for code quality, maintainability, and scalability.</li>
+                  </ul>
                 </div>
                 <div class="resume-item">
-                <h4>Graphic design specialist</h4>
-                <h5>2017 - 2018</h5>
-                <p><em>Stepping Stone Advertising, New York, NY</em></p>
-                <ul>
-                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                </ul>
+                  <h4>Frontend Developer</h4>
+                  <h5>2022 - present</h5>
+                  <p><em>MSMEs Enterpreneur Nigeria, Kwara state branch</em></p>
+                  <ul>
+                    <li>Collaborated with cross-functional teams to build and maintain a responsive web application using React.</li>
+                    <li>Implemented responsive designs using HTML, CSS, and JavaScript.</li>
+                    <li>Optimized website performance and ensured cross-browser compatibility.</li>
+                    <li>Integrated APIs and third-party libraries to enhance functionality.</li>
+                    <li>Conducted code reviews and implemented best practices for code quality and maintainability.</li>
+                  </ul>
                 </div>
             </div>
             </div>
