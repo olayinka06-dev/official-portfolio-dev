@@ -119,23 +119,16 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Add the desired gap value */
+    
   }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
   border: 1px solid var(--herocolor);
   width: 100%;
-}
-/* .portfolio-item {
-  width: calc(100% / 3);
-  padding: 6px;
-  box-sizing: border-box;
-  display: inline-block; 
-  vertical-align: top; 
-  transition: all 3s ease;
-  margin: 0 5px !important;
   border-radius: 10px;
-} */
-
+  padding: 10px;
+  transition: all 3s ease;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -154,7 +147,6 @@ const Wrapper = styled.section`
   line-height: 1;
   text-transform: uppercase;
   color: var(--text);
-  color: var(--herocolor);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -181,7 +173,7 @@ const Wrapper = styled.section`
   justify-content: center;
   padding: 0 20px;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
   z-index: 9999;
 }
 .btn-group a{
