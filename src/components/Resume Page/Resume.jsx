@@ -14,7 +14,7 @@ const Resume = () => {
 
             <div class="section-title">
             <h2>Resume</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>As a highly skilled and motivated full stack developer with 1 year of experience, I specialize in building responsive and user-friendly web applications. Proficient in frontend technologies such as HTML, CSS, JavaScript, and modern frameworks like React, as well as backend technologies like Node.js and databases like MongoDB. I have a strong problem-solving ability and a passion for creating engaging user experiences.</p>
             </div>
 
             <div class="row">

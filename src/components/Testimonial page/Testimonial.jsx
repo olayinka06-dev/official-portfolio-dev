@@ -50,7 +50,7 @@ const Testimonial = () => {
                 <h4>Ceo &amp; Founder</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  Working with Olayinka has been an incredible experience. Their expertise in both frontend and backend development helped us build a robust and user-friendly web application. Their attention to detail and problem-solving abilities are commendable.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -63,7 +63,7 @@ const Testimonial = () => {
                 <h4>Designer</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  Olayinka's frontend development skills are exceptional. They have an eye for design and always ensure that the user experience is top-notch. Their dedication and commitment to delivering high-quality work make them a valuable asset to any project.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -76,7 +76,7 @@ const Testimonial = () => {
                 <h4>Store Owner</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  I had the pleasure of collaborating with Olayinka on a complex web development project. Their full stack expertise was evident throughout the process. They seamlessly integrated frontend and backend components, resulting in a highly functional and efficient application.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -89,7 +89,7 @@ const Testimonial = () => {
                 <h4>Freelancer</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  Olayinka's technical skills and ability to solve problems are impressive. They have a deep understanding of modern frontend frameworks like React and backend technologies like Node.js. Their contributions significantly improved the overall performance and functionality of our web application.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -102,7 +102,7 @@ const Testimonial = () => {
                 <h4>Entrepreneur</h4>
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  I highly recommend Olayinka for any web development project. Their professionalism, clear communication, and commitment to meeting deadlines are remarkable. They consistently delivered high-quality code and exceeded our expectations.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
