@@ -166,7 +166,7 @@ const Wrapper = styled.section`
   overflow: hidden;
   z-index: 1;
   transition: all 3s ease;
-
+  width: 100%;
 }
 .btn-group{
   display: flex;
