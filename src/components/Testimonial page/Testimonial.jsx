@@ -14,6 +14,7 @@ const Testimonial = () => {
           },
           spaceBetween: 30,
           slidesPerView: 1,
+          grabCursor: true,
           pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
