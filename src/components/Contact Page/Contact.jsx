@@ -23,9 +23,10 @@ const Contact = () => {
     emailjs.sendForm('service_crx3kho', 'template_09ehw19', form.current, 'u2nfu0FS3Hq8iz7Hh')
       .then((result) => {
           console.log(result.text);
-          setSuccess("Your message has been sent. Thank you!")
-          setError("")
-          setLoading(false)
+          setSuccess("Your message has been sent. Thank you!");
+          setError("");
+          setLoading(false);
+          e.target.reset();
       }, (error) => {
           console.log(error.text);
           setSuccess("");
@@ -90,8 +91,8 @@ const Contact = () => {
                 {
                    loading ? (<div className="loading">Loading</div>) : (                
                     <>
-                      {error && (<div className="error-message">{error}</div>)}
-                      {success && (<div className="sent-message">{success}</div>)}
+                      {error && (<span className="error-message">{error}</span>)}
+                      {success && (<span className="sent-message">{success}</span>)}
                     </>
                   )
                 }
@@ -236,19 +237,15 @@ input, textarea{
   width: 100%;
   height: 5vh;
 }
-.contact form .loading {
-  display: none;
+.loading {
+  content: "";
+  display: inline-block;
   background: #fff;
   text-align: center;
   padding: 15px;
-}
-
-.contact form .loading:before {
-  content: "";
-  display: inline-block;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;

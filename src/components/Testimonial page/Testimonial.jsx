@@ -3,31 +3,31 @@ import styled from 'styled-components';
 import Swiper from 'swiper';
 import 'swiper/swiper.min.css';
 
-
 const Testimonial = () => {
     useEffect(() => {
         new Swiper('.swiper-container', {
-            speed: 600,
-            loop: true,
-            autoplay: {
-              delay: 5000,
-              disableOnInteraction: false
+          speed: 600,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+          },
+          spaceBetween: 30,
+          slidesPerView: 1,
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+          },
+          breakpoints: {
+            992: {
+              slidesPerView: 2
             },
-            slidesPerView: 1,
-            pagination: {
-              el: '.swiper-pagination',
-              type: 'bullets',
-              clickable: true
-            },
-            breakpoints: {
-                992: {
-                  slidesPerView: 2
-                },
-                768: {
-                  slidesPerView: 3
-                }
-              }
-          });
+            768: {
+              slidesPerView: 3
+            }
+          }
+        });
       }, []);
   return (
     <Wrapper>
@@ -136,6 +136,8 @@ const Wrapper = styled.section`
 
 .testimonials .testimonial-item {
   text-align: center;
+  border: 1px solid var(--herocolor);
+  border-radius: 20px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
