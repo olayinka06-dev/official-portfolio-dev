@@ -89,7 +89,7 @@ const Contact = () => {
               </div>
               <div classname="">
                 {
-                   loading ? (<div className="loading">Loading</div>) : (                
+                   loading ? (<div className="loading"></div>) : (                
                     <>
                       {error && (<span className="error-message">{error}</span>)}
                       {success && (<span className="sent-message">{success}</span>)}
@@ -251,6 +251,7 @@ input, textarea{
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
+  margin: 0 auto;
 }
 
 .contact form input,
