@@ -131,6 +131,8 @@ const Wrapper = styled.div`
     position: relative;
     z-index: 2;
     min-width: 300px;
+    padding-top: 30px;
+    padding-bottom: 15px;
   }
 
   .container h1{
