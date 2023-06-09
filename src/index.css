@@ -73,40 +73,6 @@ p, li{
   --para: white;
 }
 
-/* .dark-mode{
-  --letter:rgb(219, 219, 219);
-  --navigationbody: black;
-  --mainbody: white;
-  --herobackground: rgba(5, 13, 24, 0.3);
-  --activehover: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  --navlinkbackground: rgb(32,33,35);
-  --navlinkcolor: white;
-  --herocolor: hsl(136, 65%, 51%);
-  --herospan: hsl(192, 70%, 51%);
-  --text: white;
-  --social: #45505b;
-  --sectionbackground: black;
-  --navshadow: 0px 4px 4px rgb(222, 225, 232);
-  --hover: #272829;
-} */
-
-/* .dark-mode{
-  --navigationbody:  rgb(32,33,35);
-  --mainbody: rgb(32,33,35);
-  --herobackground: rgba(5, 13, 24, 0.3);
-  --activehover: linear-gradient(to right, hsl(206, 48%, 27%), hsl(229, 64%, 46%));
-  --navlinkbackground: rgba(9, 13, 18, 0.3);
-  --navlinkcolor: white;
-  --herocolor:   hsl(229, 64%, 46%);
-  --herospan:  hsl(229, 64%, 46%);
-  --text: rgb(219, 219, 219);
-  --letter: white;
-  --social: rgb(69,80,91);
-  --sectionbackground: rgb(32,33,35);
-  --navshadow: black;
-  --hover: hsl(136, 65%, 51%);
-
-} */
 .cv{
   text-decoration: none;
   padding: 12px 25px;

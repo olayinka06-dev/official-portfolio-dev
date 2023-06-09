@@ -101,9 +101,6 @@ const Wrapper = styled.div`
     right: 0;
   }
   .box-1 {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     width: 100%;
     overflow: hidden;
     opacity: 0;
