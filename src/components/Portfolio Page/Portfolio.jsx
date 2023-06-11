@@ -10,42 +10,48 @@ const images = [
     alt: 'Screenshot of App 1',
     category: 'App',
     title: 'App 1',
-    link: 'https://olayinka-dev-portfolio.netlify.app'
+    link: 'https://olayinka-dev-portfolio.netlify.app',
+    name: "Toshconsultinc Website",
   },
   {
     src: './img/portfolio/portfolio-2.jpg',
     alt: 'Screenshot of Website 1',
     category: 'Website',
     title: 'Website 1',
-    link: 'https://olayinka-dev-portfolio.netlify.app'
+    link: 'https://olayinka-dev-portfolio.netlify.app',
+    name: "Men On Mission Website",
   },
   {
     src: './img/portfolio/portfolio-3.jpg',
     alt: 'Screenshot of Blog 1',
     category: 'Blog',
     title: 'Blog 1',
-    link: 'https://olayinka-dev-portfolio.netlify.app'
+    link: 'https://olayinka-dev-portfolio.netlify.app',
+    name: "Falconpay Website",
   },
   {
     src: './img/portfolio/portfolio-4.jpg',
     alt: 'Screenshot of App 2',
     category: 'App',
     title: 'App 2',
-    link: 'https://olayinka-dev-portfolio.netlify.app'
+    link: 'https://olayinka-dev-portfolio.netlify.app',
+    name: "Dictionary Website",
   },
   {
     src: './img/portfolio/portfolio-5.jpg',
     alt: 'Screenshot of Website 2',
     category: 'Website',
     title: 'Website 2',
-    link: 'https://olayinka-dev-portfolio.netlify.app'
+    link: 'https://olayinka-dev-portfolio.netlify.app',
+    name: "Weather Website",
   },
   {
     src: './img/portfolio/portfolio-6.jpg',
     alt: 'Screenshot of Blog 2',
     category: 'Blog',
     tile: 'Blog 2',
-    link: 'https://olayinka-dev-portfolio.netlify.app'
+    link: 'https://olayinka-dev-portfolio.netlify.app',
+    name: "Url Shortener Website",
   }
 ];
 
@@ -88,6 +94,9 @@ const GroupPortfolio = () => {
                       </div>
                     </div>
                   </div>
+                  <div style={{width: "100%", textAlign: "center"}}>
+                    <span>{image.name}</span>
+                  </div>
                   <div className="btn-group">
                     <a href={image.link} className='hire'>View Live Demo</a>
                   </div>
@@ -108,6 +117,9 @@ const Wrapper = styled.section`
   padding-top: 40px;
   padding-right: 10px;
   padding-bottom: 20px;
+}
+span{
+  color: var(--herocolor);
 }
 .top{
   width: 100%;
@@ -311,6 +323,11 @@ const Wrapper = styled.section`
 @media screen and (max-width: 992px) {
   .portfolio .portfolio-container {
       grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+  .portfolio .portfolio-container {
+      grid-template-columns: repeat(1, 1fr);
     }
 }
 

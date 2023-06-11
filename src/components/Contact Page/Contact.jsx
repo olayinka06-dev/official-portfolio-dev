@@ -238,15 +238,12 @@ input, textarea{
   height: 5vh;
 }
 .loading {
-  content: "";
-  display: inline-block;
   background: #fff;
   text-align: center;
   padding: 15px;
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
