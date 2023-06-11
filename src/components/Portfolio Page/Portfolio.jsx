@@ -120,6 +120,7 @@ const Wrapper = styled.section`
 }
 span{
   color: var(--herocolor);
+  margin-top: 10px;
 }
 .top{
   width: 100%;
@@ -185,7 +186,7 @@ span{
   justify-content: center;
   padding: 0 20px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 14px;
   z-index: 9999;
 }
 .btn-group a{
