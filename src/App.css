@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* For WebKit browsers (Chrome, Safari) */
+.scroll_bar::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 3px;
+  }
+  
+  .scroll_bar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  
+  .scroll_bar::-webkit-scrollbar-thumb {
+    background: #00CCFF;
+    border-radius: 3px;
+  }
+  
+  .scroll_bar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

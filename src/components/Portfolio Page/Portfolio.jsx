@@ -55,6 +55,8 @@ const images = [
   }
 ];
 
+const portfolioToDisplay = images.slice(0,6)
+
 const GroupPortfolio = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
   useEffect(() => {
@@ -78,7 +80,7 @@ const GroupPortfolio = () => {
           </ul>
           </div>
           <div className="row portfolio-container" data-aos="fade-up">
-            {images.filter(image => selectedFilter === 'All' || image.category === selectedFilter)
+            {portfolioToDisplay.filter(image => selectedFilter === 'All' || image.category === selectedFilter)
               .map((image, index) => (
                 <div className="portfolio-item" key={index}>
                   <div className="portfolio-wrap">
@@ -98,7 +100,7 @@ const GroupPortfolio = () => {
                     <span>{image.name}</span>
                   </div>
                   <div className="btn-group">
-                    <a href={image.link} className='hire'>View Live Demo</a>
+                    <a href={image.link} className='hire text-center'>View Live Demo</a>
                   </div>
                 </div>
                 

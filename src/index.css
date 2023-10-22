@@ -83,8 +83,7 @@ p, li{
   border-top: 1px solid var(--herocolor);
   border-bottom: 1px solid  var(--herospan);
   border-right: 1px solid  var(--herospan);
-  transition: all .5s ease;
-  box-shadow: 0px 9px 3px rgba(0,0,0,0.3);
+  transition: all .2s ease;
 }
 .cv:hover{
   background: transparent;
@@ -104,8 +103,7 @@ p, li{
   border-right: 1px solid  var(--herospan);
   border-radius: 20px;
   color: var(--text);
-  transition: all 1s ease;
-  box-shadow: 0px 9px 3px rgba(0,0,0,0.3);
+  transition: all .2s ease;
 }
 .hire:hover{
   background: var(--activehover);
@@ -171,4 +169,25 @@ section {
   }
 }
 
+
+
+/* For WebKit browsers (Chrome, Safari) */
+.scroll_bar::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 3px;
+}
+
+.scroll_bar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.scroll_bar::-webkit-scrollbar-thumb {
+  background: #00CCFF;
+  border-radius: 3px;
+}
+
+.scroll_bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 

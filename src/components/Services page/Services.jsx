@@ -1,203 +1,174 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import website from '../images/Top-6-Front-End-Web-Development-Tools-to-Increase-Your-Productivity-in-2020-1.jpg';
-import app from '../images/7-popular-business-applications-mobile-phones-2.png.webp';
+import { FaLaptopCode } from "react-icons/fa";
+import { FaLayerGroup } from "react-icons/fa";
+import { FaCcApplePay } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React, {  useEffect } from "react";
+import styled from "styled-components";
 import '../../index.css';
-import ServiceData from './ServiceData';
-import {IoIosArrowForward} from 'react-icons/io';
 
-const Services = () => {
-
-  const [services, setservices] = useState("");
-
+function Services() {
   useEffect(() => {
-    setservices(ServiceData)
+    Aos.init({
+      duration: 1000,
+      delay: 200,
+      easing: "ease-in",
+    });
   }, []);
+
   return (
     <Wrapper>
-      <section id="services" className="services">
-        <div className="container" data-aos="fade-up">
-
-          <div className="section-title">
-            <h2>Services</h2>
-            <p>Explore a wide range of services I offer, meticulously customized to address your unique requirements. I specialize in delivering expert solutions that empower your success in the dynamic realm of digital innovation.</p>
-          </div>
-
-          <div className="row">
-
-            <div  className="card" data-aos="zoom-in">
-              <div class="cards">
-                <div class="icon">
-                  <img src={website} alt={website} />
-                </div>
-                <div className="info">
-                  <h4><a href="/about">Website Development</a></h4>
-                  {
-                    services && (
-                      services[0].website.map((service, index) => (
-                        <ul key={index}>
-                          <li><IoIosArrowForward/>{service}</li>
-                        </ul>
-                      ))
-                    )
-                  }
-                  {
-                    services && (
-                      services[0].languages.map((language, index) => (
-                        <ul className='website' key={index}>
-                          <li  style={{ paddingLeft: `${(index + 1) * 5}px` }}>{language.icon} <span>{language.name}</span></li>
-                        </ul>
-                      ))
-                    )
-                  }
-                </div>
+      <section id="services">
+        <div className="section-title">
+          <h2>Services</h2>
+          <p>
+            Explore a wide range of services I offer, meticulously customized to
+            address your unique requirements. I specialize in delivering expert
+            solutions that empower your success in the dynamic realm of digital
+            innovation.
+          </p>
+        </div>
+        <div
+          id="service"
+          className=" grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-2 py-20 px-5"
+        >
+          <div className="  five  justify-center items-center text-center   w-full">
+            <div className="services-box">
+              <div className="count">
+                <span>01</span>
               </div>
+              <div className="icon mt-5">
+                <FaLaptopCode style={{ width: "100%", fontSize: "3.5vmax" }} />
+                <i className="fas fa-laptop-code"></i>
+              </div>
+              <h2 className="mt-7">Web Design</h2>
+              <p className="mt-5 ">
+                I Develop full-blown web apps using HTML,Javascript, React and
+                Tailwind CSS.
+              </p>
+              
             </div>
-            <div  className="card" data-aos="zoom-in">
-              <div class="cards">
-                <div class="icon">
-                  <img src={app} alt={app} />
-                </div>
-                <div className="info">
-                  <h4><a href="/about">App Development</a></h4>
-                  {
-                    services && (
-                      services[1].app.map((service, index) => (
-                        <ul key={index}>
-                          <li><IoIosArrowForward/>{service}</li>
-                        </ul>
-                      ))
-                    )
-                  }
-                  {
-                    services && (
-                      services[1].languages.map((language, index) => (
-                        <ul className='app' key={index}>
-                          <li  style={{ paddingLeft: `${(index + 1) * 5}px` }}>{language.icon} <span>{language.name}</span></li>
-                        </ul>
-                      ))
-                    )
-                  }
-                </div>
+          </div>
+          <div className=" justify-center five items-center text-center  w-full">
+            <div className="services-box">
+              <div className="count">
+                <span>02</span>
               </div>
+              <div className="icon mt-5">
+                <FaLayerGroup style={{ width: "100%", fontSize: "3.5vmax" }} />
+                <i className="fas fa-laptop-code"></i>
+              </div>
+              <h2 className="mt-7">Web Development</h2>
+              <p className="mt-5 ">
+                In nisi tortor, consequat eu semper ut, consequat in massa.
+                Maecenas at odio a felis commodo pulvinar quis eu neque.
+              </p>
+              
+            </div>
+          </div>
+          <div className="  justify-center items-center text-center five w-full ">
+            <div className="services-box">
+              <div className="count">
+                <span>03</span>
+              </div>
+              <div className="icon mt-5">
+                <FaCcApplePay style={{ width: "100%", fontSize: "3.5vmax" }} />
+                <i className="fas fa-laptop-code"></i>
+              </div>
+              <h2 className="mt-7">App Development</h2>
+              <p className="mt-5 ">
+                In nisi tortor, consequat eu semper ut, consequat in massa.
+                Maecenas at odio a felis commodo pulvinar quis eu neque.
+              </p>
+              
             </div>
           </div>
         </div>
       </section>
     </Wrapper>
-  )
+  );
 }
+
 const Wrapper = styled.section`
-.services{
-  width: 100%;
-  padding-top: 40px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  background-color: var(--sectionbackground);
-}
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  padding: 20px 60px;
-  
-}
-.card {
-  width: 100%;
-  box-shadow: var(--serviceshadow);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-}
-.info{
-  padding: 20px;
-}
-.icon img{
-  width: 100%;
-  height: 35vh;
-  transition: all 0.5s ease;
-  opacity: 100%;
-}
-
-.icon:hover img {
-  transform: scale(1.05);
-  opacity: 90%;
-}
-ul {
-  text-decoration: none;
-  list-style: none;
-}
-.app, .website{
-  position: relative;
-  top: 20px;
-}
-li{
-  color: var(--text);
-}
-.website li{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: var(--text);
-  gap: 20px;
-}
-.app li{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  color: var(--text);
-}
-ul li svg{
-  color: var(--herospan);
-}
-.services .icon-box {
-  text-align: center;
-  padding: 70px 20px 80px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
-}
-
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: ease-in-out 0.3s;
-  position: relative;
-}
-.services .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-}
-
-.services .icon-box h4 a {
-  color: #45505b;
-  transition: ease-in-out 0.3s;
-}
-.cards {
+  #service {
+    background-color: var(--sectionbackground);
+  }
+  .services-box:hover::after {
+    -webkit-clip-path: circle(75%);
+    clip-path: circle(75%);
+  }
+  .services-box::after {
+    content: "";
+    clear: both;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: var(--herocolor);
+    top: 0;
+    right: 0;
+    z-index: -1;
+    clip-path: circle(25% at 100% 0%);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .services-box .count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #ffffff6e;
+    color: transparent;
+    line-height: 1.2;
+  }
+  .services-box:hover {
+    transform: translateY(-35px);
+    color: white !important;
+  }
+  .services-box:hover p, .services-box:hover h2{
+    color: white !important;
+    transition: all 0.4s ease-in-out;
+  }
+  .icon {
+    transform: rotate(0deg);
+  }
+  .services-box p, h2{
+    color: var(--text);
+  }
+  .services-box:hover .icon {
+    color: white;
+    transform: rotate(360deg);
+    transition: all 0.4s ease-in-out;
+  }
+  .services-box {
+    text-align: center;
+    background: var(--mainbody);
+    padding: 60px 40px;
+    border-radius: 5px;
     position: relative;
     overflow: hidden;
-}
-.cards:focus-within {
-    outline: #68becd dashed 3px;
-    outline-offset: 3px;
-}
-
-@media screen and (max-width: 992px) {
-  .services{
-    padding: 30px 10px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+    /* box-shadow: 0px 0px 10px 0px #e3e3e3; */
+    border: 1px solid var(--herocolor);
   }
-  .row{
-    flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    .twenty {
+      display: flex;
+      flex-direction: column;
+    }
+    #service {
+      display: flex;
+      flex-direction: column;
+    }
   }
-}
 
+`;
 
-
-`
 export default Services;

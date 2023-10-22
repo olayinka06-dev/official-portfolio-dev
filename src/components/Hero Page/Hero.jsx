@@ -52,8 +52,8 @@ const Hero = () => {
             <Link to={'/'}><FaLinkedinIn/></Link>
           </div>
           <div className='btn-group'>
-            <Link to={'/my-cv'} className='cv'>My CV</Link>
-            <Link className='hire'>Hire Me</Link>
+            <Link to={'/my-cv'} className='cv shadow'>My CV</Link>
+            <Link className='hire shadow'>Hire Me</Link>
           </div>
         </div>
       </div>
@@ -190,7 +190,7 @@ const Wrapper = styled.div`
       min-width: 0;
       width: 100%;
       overflow: hidden;
-      padding:0;
+      padding:20px 0;
       margin: 0;
 
     }

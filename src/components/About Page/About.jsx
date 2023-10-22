@@ -70,7 +70,7 @@ const About = () => {
       </div>
     </section> 
     <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
+      <div class="" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Skills</h2>
@@ -86,7 +86,7 @@ const About = () => {
               </div>
             </div>
             <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
+              <span class="skill">CSS & TAILWINDCSS <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
               <div data-aos="fade-right" className="progress-bar" style={{width: "90%"}}></div>
               </div>
@@ -118,9 +118,9 @@ const About = () => {
             </div>
 
             <div class="progress">
-              <span class="skill">UI/UX Design <i class="val">55%</i></span>
+              <span class="skill">NEXTJS <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div data-aos="fade-right" className="progress-bar" style={{width: "55%"}}></div>
+                <div data-aos="fade-right" className="progress-bar" style={{width: "85%"}}></div>
               </div>
             </div>
 
@@ -128,14 +128,14 @@ const About = () => {
 
           <div class="skill-slides">
             <div class="progress">
-              <span class="skill">Node js & Passport js<i class="val">90%</i></span>
+              <span class="skill">NODE js & EXPRESS JS<i class="val">80%</i></span>
               <div class="progress-bar-wrap">
               <div data-aos="fade-right" className="progress-bar" style={{width: "80%"}}></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Mongoose & Moongo DB<i class="val">75%</i></span>
+              <span class="skill">Mongoose & Moongo DB & PRISMA<i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div data-aos="fade-right" className="progress-bar" style={{width: "75%"}}></div>
               </div>
@@ -170,7 +170,7 @@ const Wrapper = styled.section`
   gap: 20px;
 }
 .img-fluid{
-  width: 376px;
+  width: 596px;
 }
 .about-left{
   width: 100%;

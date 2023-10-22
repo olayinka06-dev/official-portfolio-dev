@@ -63,9 +63,6 @@ const NavigationBar = ({backgroundSwitcher, handleToggleSwitcher, checked}) => {
             <li className={activeLink === 'contact' ? 'active' : ''}>
               <Link to="contact" smooth={true} duration={500} spy={true} offset={-70} onClick={() => handleSetActive('contact')}><AiOutlineMail className='icon'/>Contact</Link>
             </li>
-            {/* <li>
-                <Link onClick={handleToggleSwitcher}>{backgroundSwitcher}</Link>
-            </li> */}
         </ul>
         <button onClick={toggleMenu} className={`${menu ? 'toggle open' : 'toggle'}`}>
           <div className="first"></div>
